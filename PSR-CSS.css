@@ -1,2 +1,38 @@
 ﻿body {
+    background-color: #000;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.top-bar img {
+    width:1.5em;
+    margin-top:1em;
+}
+
+.top-bar li {
+    list-style-type: none;
+    display: inline;
+    margin: 1em;
+    float: right;
+}
+
+.headerLogo {
+    justify-content: left;
+    width: 75%;
+    margin-left: 2em;
+}
+
+.header-nav {
+    display:flex;
+    justify-content:end;
+    align-items:end;
+}
+
+.nav-item a {
+    font-family: 'Exo 2', sans-serif;
+    font-weight:700;
+    color: #fff;
+}
+
+nav ul {
+    float:right;
 }

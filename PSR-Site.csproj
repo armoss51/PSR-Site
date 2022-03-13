@@ -91,6 +91,13 @@
     <Content Include="CreateAccount.aspx" />
     <Content Include="Gallery.aspx" />
     <Content Include="Home.aspx" />
+    <Content Include="Images\PSRlogo.png" />
+    <Content Include="Images\Social\discord.png" />
+    <Content Include="Images\Social\facebook.png" />
+    <Content Include="Images\Social\instagram.png" />
+    <Content Include="Images\Social\twitch.png" />
+    <Content Include="Images\Social\twitter.png" />
+    <Content Include="Images\Social\youtube.png" />
     <Content Include="Login.aspx" />
     <Content Include="PSR-CSS.css" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -104,7 +111,7 @@
     <Content Include="Scripts\jquery-3.6.0.min.js" />
     <Content Include="Scripts\jquery-3.6.0.slim.js" />
     <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
-    <Content Include="Subscribe.aspx" />
+    <Content Include="Apply.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -151,12 +158,12 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Subscribe.aspx.cs">
-      <DependentUpon>Subscribe.aspx</DependentUpon>
+    <Compile Include="Apply.aspx.cs">
+      <DependentUpon>Apply.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Subscribe.aspx.designer.cs">
-      <DependentUpon>Subscribe.aspx</DependentUpon>
+    <Compile Include="Apply.aspx.designer.cs">
+      <DependentUpon>Apply.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
