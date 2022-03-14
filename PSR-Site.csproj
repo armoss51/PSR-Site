@@ -99,6 +99,11 @@
     <Content Include="Images\AboutUsCarousel\car5.jpg" />
     <Content Include="Images\GetStarted.jpg" />
     <Content Include="Images\AaronPic.jpg" />
+    <Content Include="Images\News\news2.jpg" />
+    <Content Include="Images\News\news1.jpg" />
+    <Content Include="Images\News\news3.jpg" />
+    <Content Include="Images\News\news4.jpg" />
+    <Content Include="Images\News\news5.jpg" />
     <Content Include="Images\PSRlogo.png" />
     <Content Include="Images\Social\discord.png" />
     <Content Include="Images\Social\facebook.png" />
@@ -109,6 +114,11 @@
     <Content Include="Images\teamlogin.jpg" />
     <Content Include="Images\upcoming.jpg" />
     <Content Include="Login.aspx" />
+    <Content Include="NewsArticle1.aspx" />
+    <Content Include="NewsArticle2.aspx" />
+    <Content Include="NewsArticle3.aspx" />
+    <Content Include="NewsArticle4.aspx" />
+    <Content Include="NewsArticle5.aspx" />
     <Content Include="PSR-CSS.css" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -166,6 +176,41 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsArticle1.aspx.cs">
+      <DependentUpon>NewsArticle1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsArticle1.aspx.designer.cs">
+      <DependentUpon>NewsArticle1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsArticle2.aspx.cs">
+      <DependentUpon>NewsArticle2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsArticle2.aspx.designer.cs">
+      <DependentUpon>NewsArticle2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsArticle3.aspx.cs">
+      <DependentUpon>NewsArticle3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsArticle3.aspx.designer.cs">
+      <DependentUpon>NewsArticle3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsArticle4.aspx.cs">
+      <DependentUpon>NewsArticle4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsArticle4.aspx.designer.cs">
+      <DependentUpon>NewsArticle4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsArticle5.aspx.cs">
+      <DependentUpon>NewsArticle5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsArticle5.aspx.designer.cs">
+      <DependentUpon>NewsArticle5.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Apply.aspx.cs">

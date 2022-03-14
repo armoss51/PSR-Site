@@ -64,6 +64,18 @@
                     </nav>
                 </div>
             </div>
+            <hr />
+            <div class="row">
+                <div class="col-sm-12">
+                    <footer id="footer">
+                        <p>
+                            Copyright  &copy;
+                            <script>document.write(new Date().getFullYear())</script>
+                            || Powershift Racing
+                        </p>
+                    </footer>
+                </div>
+            </div>
         </div>
     </form>
 </body>

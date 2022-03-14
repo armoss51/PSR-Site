@@ -83,33 +83,43 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <%--IMG with link here--%>
+                        <a href="NewsArticle1.aspx">
+                            <img src="Images/News/news1.jpg" alt="race track" class="news-image" /></a>
                         <div class="carousel-caption d-none d-md-block">
-                            <%--Text/Links here--%>
+                            <h5><a href="NewsArticle1.aspx">News Article 1</a></h5>
+                            <p>Sample text from article.....</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <%--IMG with link here--%>
+                        <a href="Articles/NewsArticle2.aspx">
+                            <img src="Images/News/news2.jpg" alt="driver in car" class="news-image" /></a>
                         <div class="carousel-caption d-none d-md-block">
-                            <%--Text/Links here--%>
+                            <h5><a href="NewsArticle2.aspx">News Article 2</a></h5>
+                            <p>Sample text from article.....</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <%--IMG with link here--%>
+                        <a href="NewsArticle3.aspx">
+                            <img src="Images/News/news3.jpg" alt="car on track" class="news-image" /></a>
                         <div class="carousel-caption d-none d-md-block">
-                            <%--Text/Links here--%>
+                            <h5><a href="NewsArticle3.aspx">News Article 3</a></h5>
+                            <p>Sample text from article.....</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <%--IMG with link here--%>
+                        <a href="NewsArticle4.aspx">
+                            <img src="Images/News/news4.jpg" alt="flags" class="news-image" /></a>
                         <div class="carousel-caption d-none d-md-block">
-                            <%--Text/Links here--%>
+                            <h5><a href="NewsArticle4.aspx">News Article 4</a></h5>
+                            <p>Sample text from article.....</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <%--IMG with link here--%>
+                        <a href="NewsArticle5.aspx">
+                            <img src="Images/News/news5.jpg" alt="back of car" class="news-image" /></a>
                         <div class="carousel-caption d-none d-md-block">
-                            <%--Text/Links here--%>
+                            <h5><a href="NewsArticle5.aspx">News Article 5</a></h5>
+                            <p>Sample text from article.....</p>
                         </div>
                     </div>
                 </div>
@@ -153,9 +163,11 @@
             <hr />
             <div class="row">
                 <div class="col-sm-12">
-                    <footer id="footer" >
+                    <footer id="footer">
                         <p>
-                            Copyright  &copy; <script>document.write(new Date().getFullYear())</script> || Powershift Racing
+                            Copyright  &copy;
+                            <script>document.write(new Date().getFullYear())</script>
+                            || Powershift Racing
                         </p>
                     </footer>
                 </div>

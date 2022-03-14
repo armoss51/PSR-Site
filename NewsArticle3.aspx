@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Apply.aspx.cs" Inherits="PSR_Site.Subscribe" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Admin.aspx.cs" Inherits="PSR_Site.Admin" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Apply</title>
+    <title>News Article 3</title>
     <script src="Scripts/jquery-3.6.0.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
@@ -62,6 +62,18 @@
                             </ul>
                         </div>
                     </nav>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-sm-12">
+                    <article id="article-3">
+                        <h3>News Article 3</h3>
+                        <p><time class="entry-date" date="2022-03-13">March 13, 2022</time></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. Tempor nec feugiat nisl pretium fusce id velit ut tortor. Ultrices eros in cursus turpis massa tincidunt dui. Senectus et netus et malesuada. Tristique senectus et netus et. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat. Gravida neque convallis a cras semper auctor. Neque sodales ut etiam sit amet nisl. Eu lobortis elementum nibh tellus molestie nunc non blandit. Bibendum neque egestas congue quisque egestas diam in arcu cursus. Viverra maecenas accumsan lacus vel facilisis volutpat. Leo duis ut diam quam. Nulla facilisi morbi tempus iaculis urna id. Nulla porttitor massa id neque aliquam vestibulum. Porta nibh venenatis cras sed felis eget velit aliquet. Orci dapibus ultrices in iaculis nunc sed augue lacus viverra. At urna condimentum mattis pellentesque id nibh tortor id aliquet. Aliquam sem et tortor consequat id porta.</p>
+                        <p>Sapien eget mi proin sed libero. Pretium nibh ipsum consequat nisl vel pretium. Ullamcorper malesuada proin libero nunc consequat. Mattis molestie a iaculis at erat. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Pharetra sit amet aliquam id diam. Sed viverra ipsum nunc aliquet bibendum. Velit ut tortor pretium viverra suspendisse potenti. Congue quisque egestas diam in arcu cursus euismod. Quam viverra orci sagittis eu volutpat odio facilisis. Ac turpis egestas sed tempus urna et. Nisl nunc mi ipsum faucibus vitae aliquet nec. Magna fermentum iaculis eu non diam phasellus. Sed turpis tincidunt id aliquet risus feugiat in ante.</p>
+                        <p>Lacus vestibulum sed arcu non odio euismod lacinia. Faucibus scelerisque eleifend donec pretium vulputate sapien nec. Sed tempus urna et pharetra pharetra massa massa ultricies mi. Ut lectus arcu bibendum at. Vel eros donec ac odio tempor. Pulvinar sapien et ligula ullamcorper malesuada proin libero. Dui sapien eget mi proin sed libero enim sed faucibus. Ultricies tristique nulla aliquet enim tortor. Neque sodales ut etiam sit. Amet nulla facilisi morbi tempus iaculis urna. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Cras tincidunt lobortis feugiat vivamus at augue. Elit scelerisque mauris pellentesque pulvinar pellentesque. Id porta nibh venenatis cras sed felis. Pellentesque adipiscing commodo elit at imperdiet dui. Ultrices eros in cursus turpis massa tincidunt. Augue interdum velit euismod in pellentesque massa placerat duis.</p>
+                    </article>
                 </div>
             </div>
             <hr />
