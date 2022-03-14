@@ -159,8 +159,18 @@ nav ul {
     height: 15em;
 }
 
+#exAlbum1 img {
+    width: auto;
+    height: 15em;
+}
+
+#exAlbum2 img {
+    width: auto;
+    height: 15em;
+}
+
 .drivers {
-    text-align:center;
+    text-align: center;
 }
 
 .drivers h2 {
@@ -193,6 +203,12 @@ nav ul {
 .AaronBio {
     padding-left: 1em;
     text-align:left;
+}
+
+.application {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
 

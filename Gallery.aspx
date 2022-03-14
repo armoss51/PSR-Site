@@ -67,6 +67,104 @@
             <hr />
             <div class="row">
                 <div class="col-sm-12">
+                    <h4>Example Album</h4>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="exAlbum2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#exAlbum2" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" class="active">
+                                </button>
+                                <button type="button" data-bs-target="#exAlbum2" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2">
+                                </button>
+                                <button type="button" data-bs-target="#exAlbum2" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3">
+                                </button>
+                                <button type="button" data-bs-target="#exAlbum2" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4">
+                                </button>
+                                <button type="button" data-bs-target="#exAlbum2" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5">
+                                </button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Images/PSRlogo.png" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Images/AboutUsCarousel/car1.PNG" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Images/AboutUsCarousel/car2.PNG" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Images/AboutUsCarousel/car3.PNG" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Images/AboutUsCarousel/Car4.jpg" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#exAlbum2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Prev</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#exAlbum2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4>Example Album</h4>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="exAlbum1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#exAlbum1" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" class="active">
+                                </button>
+                                <button type="button" data-bs-target="#exAlbum1" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2">
+                                </button>
+                                <button type="button" data-bs-target="#exAlbum1" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3">
+                                </button>
+                                <button type="button" data-bs-target="#exAlbum1" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4">
+                                </button>
+                                <button type="button" data-bs-target="#exAlbum1" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5">
+                                </button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Images/PSRlogo.png" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Images/AboutUsCarousel/car1.PNG" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Images/AboutUsCarousel/car2.PNG" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Images/AboutUsCarousel/car3.PNG" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Images/AboutUsCarousel/Car4.jpg" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#exAlbum1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Prev</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#exAlbum1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-sm-12">
                     <footer id="footer">
                         <p>
                             Copyright  &copy;

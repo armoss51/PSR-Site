@@ -66,6 +66,18 @@
             </div>
             <hr />
             <div class="row">
+                <div class="col-sm-12 application">
+                    <asp:TextBox ID="TextBox1" runat="server" placeholder="Name"></asp:TextBox>
+                    <asp:TextBox ID="TextBox2" runat="server" placeholder="Email"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" placeholder="iRacing Name"></asp:TextBox>
+                    <asp:TextBox ID="TextBox4" runat="server" placeholder="Discord name (Include digits)"></asp:TextBox>
+                    <asp:TextBox ID="TextBox5" runat="server" placeholder="Location"></asp:TextBox>
+                    <asp:CheckBoxList ID="CheckBoxList1" runat="server"></asp:CheckBoxList>
+                    <asp:Button ID="btnApply" runat="server" Text="Submit" />
+                </div>
+            </div>
+            <hr />
+            <div class="row">
                 <div class="col-sm-12">
                     <footer id="footer">
                         <p>
