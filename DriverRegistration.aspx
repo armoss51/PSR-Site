@@ -81,8 +81,9 @@
                     <asp:RadioButtonList ID="rblRegisterPrimaryCar" runat="server" DataSourceID="sdsGetCar" DataTextField="CarName" DataValueField="CarID"></asp:RadioButtonList>
                     <asp:SqlDataSource ID="sdsGetCar" runat="server" ConnectionString="<%$ ConnectionStrings:S22_ksarmossConnectionString %>" SelectCommand="spGetCar" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                     <br />
-                    <asp:Button ID="btnRegister" runat="server" Text="Register" />
+                    <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" />
                     <asp:Button ID="btnRegClear" runat="server" Text="Clear" />
+                    <asp:Label ID="lblRegMessage" runat="server" Text=""></asp:Label>
                 </div>
             </div>
             <hr />
