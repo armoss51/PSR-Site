@@ -649,8 +649,8 @@ intellisense.annotate(jQuery.Event.prototype, {
     /// <summary>Returns whether event.preventDefault() was ever called on this event object.</summary>
     /// <returns type="Boolean" />
   },
-  'isImmediatePropagationStopped': function() {
-    /// <summary>Returns whether event.stopImmediatePropagation() was ever called on this event object.</summary>
+  'isImMEDIAtePropagationStopped': function() {
+    /// <summary>Returns whether event.stopImMEDIAtePropagation() was ever called on this event object.</summary>
     /// <returns type="Boolean" />
   },
   'isPropagationStopped': function() {
@@ -684,7 +684,7 @@ intellisense.annotate(jQuery.Event.prototype, {
     /// <summary>The last value returned by an event handler that was triggered by this event, unless the value was undefined.</summary>
     /// <returns type="Object" />
   },
-  'stopImmediatePropagation': function() {
+  'stopImMEDIAtePropagation': function() {
     /// <summary>Keeps the rest of the handlers from being executed and prevents the event from bubbling up the DOM tree.</summary>
   },
   'stopPropagation': function() {
@@ -1831,14 +1831,14 @@ intellisense.annotate(jQuery.fn, {
   },
   'next': function() {
     /// <signature>
-    ///   <summary>Get the immediately following sibling of each element in the set of matched elements. If a selector is provided, it retrieves the next sibling only if it matches that selector.</summary>
+    ///   <summary>Get the imMEDIAtely following sibling of each element in the set of matched elements. If a selector is provided, it retrieves the next sibling only if it matches that selector.</summary>
     ///   <param name="selector" type="String">A string containing a selector expression to match elements against.</param>
     ///   <returns type="jQuery" />
     /// </signature>
   },
   'next adjacent': function() {
     /// <signature>
-    ///   <summary>Selects all next elements matching "next" that are immediately preceded by a sibling "prev".</summary>
+    ///   <summary>Selects all next elements matching "next" that are imMEDIAtely preceded by a sibling "prev".</summary>
     ///   <param name="prev" type="String">Any valid selector.</param>
     ///   <param name="next" type="String">A selector to match the element that is next to the first selector.</param>
     /// </signature>
@@ -2069,7 +2069,7 @@ intellisense.annotate(jQuery.fn, {
   },
   'prev': function() {
     /// <signature>
-    ///   <summary>Get the immediately preceding sibling of each element in the set of matched elements, optionally filtered by a selector.</summary>
+    ///   <summary>Get the imMEDIAtely preceding sibling of each element in the set of matched elements, optionally filtered by a selector.</summary>
     ///   <param name="selector" type="String">A string containing a selector expression to match elements against.</param>
     ///   <returns type="jQuery" />
     /// </signature>
@@ -2401,14 +2401,14 @@ intellisense.annotate(jQuery.fn, {
     /// <signature>
     ///   <summary>Stop the currently-running animation on the matched elements.</summary>
     ///   <param name="clearQueue" type="Boolean">A Boolean indicating whether to remove queued animation as well. Defaults to false.</param>
-    ///   <param name="jumpToEnd" type="Boolean">A Boolean indicating whether to complete the current animation immediately. Defaults to false.</param>
+    ///   <param name="jumpToEnd" type="Boolean">A Boolean indicating whether to complete the current animation imMEDIAtely. Defaults to false.</param>
     ///   <returns type="jQuery" />
     /// </signature>
     /// <signature>
     ///   <summary>Stop the currently-running animation on the matched elements.</summary>
     ///   <param name="queue" type="String">The name of the queue in which to stop animations.</param>
     ///   <param name="clearQueue" type="Boolean">A Boolean indicating whether to remove queued animation as well. Defaults to false.</param>
-    ///   <param name="jumpToEnd" type="Boolean">A Boolean indicating whether to complete the current animation immediately. Defaults to false.</param>
+    ///   <param name="jumpToEnd" type="Boolean">A Boolean indicating whether to complete the current animation imMEDIAtely. Defaults to false.</param>
     ///   <returns type="jQuery" />
     /// </signature>
   },

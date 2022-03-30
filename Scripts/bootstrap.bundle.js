@@ -565,7 +565,7 @@
         jQueryEvent = $.Event(event, args);
         $(element).trigger(jQueryEvent);
         bubbles = !jQueryEvent.isPropagationStopped();
-        nativeDispatch = !jQueryEvent.isImmediatePropagationStopped();
+        nativeDispatch = !jQueryEvent.isImMEDIAtePropagationStopped();
         defaultPrevented = jQueryEvent.isDefaultPrevented();
       }
 
@@ -3828,7 +3828,7 @@
       } else {
         this._createPopper(parent);
       } // If this is a touch-enabled device we add extra
-      // empty mouseover listeners to the body's immediate children;
+      // empty mouseover listeners to the body's imMEDIAte children;
       // only needed because of broken event delegation on iOS
       // https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html
 
@@ -5548,7 +5548,7 @@
       if (customClass) {
         tip.classList.add(...customClass.split(' '));
       } // If this is a touch-enabled device we add extra
-      // empty mouseover listeners to the body's immediate children;
+      // empty mouseover listeners to the body's imMEDIAte children;
       // only needed because of broken event delegation on iOS
       // https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html
 

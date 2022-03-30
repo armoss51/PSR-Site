@@ -2137,7 +2137,7 @@ Expr = Sizzle.selectors = {
 		// "Whether an element is represented by a :lang() selector
 		// is based solely on the element's language value
 		// being equal to the identifier C,
-		// or beginning with the identifier C immediately followed by "-".
+		// or beginning with the identifier C imMEDIAtely followed by "-".
 		// The matching of C against the element's language value is performed case-insensitively.
 		// The identifier C does not have to be a valid language name."
 		// http://www.w3.org/TR/selectors/#lang-pseudo
@@ -2535,7 +2535,7 @@ function setMatcher( preFilter, selector, matcher, postFilter, postFinder, postS
 				// If we have a postFinder, or filtered seed, or non-seed postFilter or preexisting results,
 				postFinder || ( seed ? preFilter : preexisting || postFilter ) ?
 
-					// ...intermediate processing is necessary
+					// ...interMEDIAte processing is necessary
 					[] :
 
 					// ...otherwise use results directly
@@ -2565,7 +2565,7 @@ function setMatcher( preFilter, selector, matcher, postFilter, postFinder, postS
 			if ( postFinder || preFilter ) {
 				if ( postFinder ) {
 
-					// Get the final matcherOut by condensing this intermediate into postFinder contexts
+					// Get the final matcherOut by condensing this interMEDIAte into postFinder contexts
 					temp = [];
 					i = matcherOut.length;
 					while ( i-- ) {
@@ -3226,7 +3226,7 @@ var rootjQuery,
 			return root.ready !== undefined ?
 				root.ready( selector ) :
 
-				// Execute immediately if ready is not present
+				// Execute imMEDIAtely if ready is not present
 				selector( jQuery );
 		}
 
@@ -3858,7 +3858,7 @@ jQuery.extend( {
 
 							// Support: Promises/A+ section 2.3.3.3.1
 							// https://promisesaplus.com/#point-57
-							// Re-resolve promises immediately to dodge false rejection from
+							// Re-resolve promises imMEDIAtely to dodge false rejection from
 							// subsequent errors
 							if ( depth ) {
 								process();
@@ -4846,7 +4846,7 @@ function showHide( elements, show ) {
 		display = elem.style.display;
 		if ( show ) {
 
-			// Since we force visibility upon cascade-hidden elements, an immediate (and slow)
+			// Since we force visibility upon cascade-hidden elements, an imMEDIAte (and slow)
 			// check is required in this first loop unless we have a nonempty display value (either
 			// inline or about-to-be-restored)
 			if ( display === "none" ) {
@@ -5416,7 +5416,7 @@ jQuery.event = {
 
 			j = 0;
 			while ( ( handleObj = matched.handlers[ j++ ] ) &&
-				!event.isImmediatePropagationStopped() ) {
+				!event.isImMEDIAtePropagationStopped() ) {
 
 				// If the event is namespaced, then each handler is only invoked if it is
 				// specially universal or its namespaces are a superset of the event's.
@@ -5655,7 +5655,7 @@ function leverageNative( el, type, expectSync ) {
 					if ( saved !== result ) {
 
 						// Cancel the outer synthetic event
-						event.stopImmediatePropagation();
+						event.stopImMEDIAtePropagation();
 						event.preventDefault();
 
 						// Support: Chrome 86+
@@ -5685,7 +5685,7 @@ function leverageNative( el, type, expectSync ) {
 					value: jQuery.event.trigger(
 
 						// Support: IE <=9 - 11+
-						// Extend with the prototype to reset the above stopImmediatePropagation()
+						// Extend with the prototype to reset the above stopImMEDIAtePropagation()
 						jQuery.extend( saved[ 0 ], jQuery.Event.prototype ),
 						saved.slice( 1 ),
 						this
@@ -5693,7 +5693,7 @@ function leverageNative( el, type, expectSync ) {
 				} );
 
 				// Abort handling of the native event
-				event.stopImmediatePropagation();
+				event.stopImMEDIAtePropagation();
 			}
 		}
 	} );
@@ -5762,7 +5762,7 @@ jQuery.Event.prototype = {
 	constructor: jQuery.Event,
 	isDefaultPrevented: returnFalse,
 	isPropagationStopped: returnFalse,
-	isImmediatePropagationStopped: returnFalse,
+	isImMEDIAtePropagationStopped: returnFalse,
 	isSimulated: false,
 
 	preventDefault: function() {
@@ -5783,13 +5783,13 @@ jQuery.Event.prototype = {
 			e.stopPropagation();
 		}
 	},
-	stopImmediatePropagation: function() {
+	stopImMEDIAtePropagation: function() {
 		var e = this.originalEvent;
 
-		this.isImmediatePropagationStopped = returnTrue;
+		this.isImMEDIAtePropagationStopped = returnTrue;
 
 		if ( e && !this.isSimulated ) {
-			e.stopImmediatePropagation();
+			e.stopImMEDIAtePropagation();
 		}
 
 		this.stopPropagation();
@@ -8312,7 +8312,7 @@ jQuery.parseHTML = function( data, context, keepScripts ) {
 
 	if ( !context ) {
 
-		// Stop scripts or inline event handlers from being executed immediately
+		// Stop scripts or inline event handlers from being executed imMEDIAtely
 		// by using document.implementation
 		if ( support.createHTMLDocument ) {
 			context = document.implementation.createHTMLDocument( "" );

@@ -17,7 +17,7 @@
             <div class="row">
                 <div class="top-bar col-sm-12">
                     <nav class="navbar navbar-expand-sm navbar-dark bg-black">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseSocial">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSocial">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div id="collapseSocial" class="collapse navbar-collapse">
@@ -47,16 +47,16 @@
                 </div>
                 <div class="col-sm-8 header-nav">
                     <nav class="navbar navbar-expand-sm navbar-dark bg-black">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div id="collapseNavbar" class="collapse navbar-collapse">
                             <ul class="navbar-nav align-bottom">
                                 <li class="nav-item"><a href="Home.aspx" class="nav-link">HOME</a></li>
                                 <li class="nav-item"><a href="AboutUs.aspx" class="nav-link">ABOUT US</a></li>
-                                <li class="nav-item"><a href="Gallery.aspx" class="nav-link">GALLERY</a></li>
+                                <li class="nav-item"><a href="MEDIA.aspx" class="nav-link">MEDIA</a></li>
                                 <li class="nav-item"><a href="Apply.aspx" class="nav-link">APPLY</a></li>
-                                <li class="nav-item"><a href="CreateAccount.aspx" class="nav-link">CREATE ACCOUNT</a></li>
+                                <li class="nav-item"><a href="DriverRegistration.aspx" class="nav-link">DRIVER REGISTRATION</a></li>
                                 <li class="nav-item"><a href="Login.aspx" class="nav-link">LOGIN</a></li>
                                 <li class="nav-item"><a href="Admin.aspx" class="nav-link">ADMIN</a></li>
                             </ul>
@@ -67,13 +67,19 @@
             <hr />
             <div class="row">
                 <div class="col-sm-12 application">
-                    <asp:TextBox ID="TextBox1" runat="server" placeholder="Name"></asp:TextBox>
-                    <asp:TextBox ID="TextBox2" runat="server" placeholder="Email"></asp:TextBox>
-                    <asp:TextBox ID="TextBox3" runat="server" placeholder="iRacing Name"></asp:TextBox>
-                    <asp:TextBox ID="TextBox4" runat="server" placeholder="Discord name (Include digits)"></asp:TextBox>
-                    <asp:TextBox ID="TextBox5" runat="server" placeholder="Location"></asp:TextBox>
-                    <asp:CheckBoxList ID="CheckBoxList1" runat="server"></asp:CheckBoxList>
+                    <asp:TextBox ID="ApplyName" runat="server" placeholder="Name"></asp:TextBox>
+                    <asp:TextBox ID="ApplyEmail" runat="server" placeholder="Email"></asp:TextBox>
+                    <asp:TextBox ID="ApplyIracingName" runat="server" placeholder="iRacing Name"></asp:TextBox>
+                    <asp:TextBox ID="ApplyDiscordName" runat="server" placeholder="Discord name (Include digits)"></asp:TextBox>
+                    <br />
+                    <asp:Label ID="lblApplySelectRegion" runat="server" Text="Select Your Region:"></asp:Label>
+                    <asp:RadioButtonList ID="rblApplyRegion" runat="server"></asp:RadioButtonList>
+                    <br />
+                    <asp:Label ID="lblapplySelectCar" runat="server" Text="Select Your Primary Car Type:"></asp:Label>
+                    <asp:RadioButtonList ID="rblApplyPrimaryCar" runat="server"></asp:RadioButtonList>
+                    <br />
                     <asp:Button ID="btnApply" runat="server" Text="Submit" />
+                    <asp:Button ID="btnClear" runat="server" Text="Clear" />
                 </div>
             </div>
             <hr />

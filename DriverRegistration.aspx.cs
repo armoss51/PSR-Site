@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace PSR_Site
 {
-    public partial class CreateAccount : System.Web.UI.Page
+    public partial class DriverRegistration : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

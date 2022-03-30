@@ -88,8 +88,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
-    <Content Include="CreateAccount.aspx" />
-    <Content Include="Gallery.aspx" />
+    <Content Include="DriverRegistration.aspx" />
+    <Content Include="Media.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Images\MattPic.jpg" />
     <Content Include="Images\AboutUsCarousel\car1.PNG" />
@@ -149,19 +149,19 @@
     <Compile Include="Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CreateAccount.aspx.cs">
-      <DependentUpon>CreateAccount.aspx</DependentUpon>
+    <Compile Include="DriverRegistration.aspx.cs">
+      <DependentUpon>DriverRegistration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CreateAccount.aspx.designer.cs">
-      <DependentUpon>CreateAccount.aspx</DependentUpon>
+    <Compile Include="DriverRegistration.aspx.designer.cs">
+      <DependentUpon>DriverRegistration.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Gallery.aspx.cs">
-      <DependentUpon>Gallery.aspx</DependentUpon>
+    <Compile Include="Media.aspx.cs">
+      <DependentUpon>Media.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Gallery.aspx.designer.cs">
-      <DependentUpon>Gallery.aspx</DependentUpon>
+    <Compile Include="Media.aspx.designer.cs">
+      <DependentUpon>Media.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>

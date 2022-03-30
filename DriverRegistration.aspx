@@ -1,14 +1,14 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="PSR_Site.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DriverRegistration.aspx.cs" Inherits="PSR_Site.DriverRegistration" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Login</title>
+    <title>DRIVER REGISTRATION</title>
     <script src="Scripts/jquery-3.6.0.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="PSR-CSS.css" rel="stylesheet" />   
+    <link href="PSR-CSS.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
@@ -66,14 +66,23 @@
             </div>
             <hr />
             <div class="row">
-                <div class="col-sm-12 login">
-                    <asp:TextBox ID="LoginEmail" runat="server" placeholder="Email"></asp:TextBox>
-                    <asp:TextBox ID="LoginPassword" runat="server" placeholder="Password"></asp:TextBox>
+                <div class="col-sm-12 register">
+                    <asp:TextBox ID="RegisterName" runat="server" placeholder="Name"></asp:TextBox>
+                    <asp:TextBox ID="RegisterEmail" runat="server" placeholder="Email"></asp:TextBox>
+                    <asp:TextBox ID="RegisterCode" runat="server" placeholder="Member ID"></asp:TextBox>
+                    <asp:TextBox ID="RegisterPassword1" runat="server" placeholder="Password"></asp:TextBox>
+                    <asp:TextBox ID="RegisterPassword2" runat="server" placeholder="Re-Enter Password"></asp:TextBox>
                     <br />
-                    <asp:CheckBox ID="cbRememberMe" runat="server" Text="Remember Me"/>
+                    <asp:Label ID="lblRegSelectRegion" runat="server" Text="Select Your Region:"></asp:Label>
+                    <asp:RadioButtonList ID="rblRegisterRegion" runat="server" DataSourceID="sdsPSR" DataTextField="RegionName" DataValueField="RegionID"></asp:RadioButtonList>
+                    <asp:SqlDataSource ID="sdsPSR" runat="server" ConnectionString="<%$ ConnectionStrings:S22_ksarmossConnectionString %>" SelectCommand="spGetRegion" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                     <br />
-                    <asp:Button ID="btnApply" runat="server" Text="Apply" />
-                    <asp:Button ID="btnLoginClear" runat="server" Text="Clear" />
+                    <asp:Label ID="lblRegSelectCar" runat="server" Text="Select Your Primary Car Type:"></asp:Label>
+                    <asp:RadioButtonList ID="rblRegisterPrimaryCar" runat="server" DataSourceID="sdsGetCar" DataTextField="CarName" DataValueField="CarID"></asp:RadioButtonList>
+                    <asp:SqlDataSource ID="sdsGetCar" runat="server" ConnectionString="<%$ ConnectionStrings:S22_ksarmossConnectionString %>" SelectCommand="spGetCar" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+                    <br />
+                    <asp:Button ID="btnRegister" runat="server" Text="Register" />
+                    <asp:Button ID="btnRegClear" runat="server" Text="Clear" />
                 </div>
             </div>
             <hr />

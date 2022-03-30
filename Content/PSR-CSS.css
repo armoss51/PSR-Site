@@ -5,22 +5,22 @@
 }
 
 h1, h2, h3, h4, p {
-    color: whitesmoke;
+    color:whitesmoke;
 }
 
 hr {
-    color: whitesmoke;
+    color:whitesmoke;
 }
 
 .top-bar {
-    padding-left: 0;
-    display: flex;
-    justify-content: right;
+    padding-left:0;
+    display:flex;
+    justify-content:right;
 }
 
 .top-bar img {
-    width: 1.5em;
-    margin-top: 1em;
+    width:1.5em;
+    margin-top:1em;
 }
 
 .top-bar li {
@@ -41,31 +41,31 @@ hr {
     display: flex;
     justify-content: end;
     align-items: end;
-    padding-left: 0;
+    padding-left:0;
 }
 
 .nav-item a {
     font-family: 'Exo 2', sans-serif;
-    font-weight: 700;
+    font-weight:700;
     color: #fff;
 }
 
 nav ul {
-    float: right;
+    float:right;
 }
 
 .carousel-control-next,
 .carousel-control-prev {
     background-color: #b91917;
     color: #fff;
-    width: 3em;
-    height: 3em;
-    top: calc(50% - 1em);
-    border-radius: 50%;
+    width:3em;
+    height:3em;
+    top:calc(50% - 1em);
+    border-radius:50%;
 }
 
 .carousel-control-prev {
-    left: 20%;
+    left:20%;
 }
 
 .carousel-control-next {
@@ -73,7 +73,7 @@ nav ul {
 }
 
 .news-image {
-    height: 20em;
+    height:20em;
 }
 
 .carousel-caption h5 {
@@ -87,11 +87,11 @@ nav ul {
 }
 
 .home-tiles {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    color:white;
 }
 
 .home-1 {
@@ -105,18 +105,18 @@ nav ul {
 }
 
 .home-1 li {
-    text-align: left;
+    text-align:left;
 }
 
 #btnIracingSignup {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top:1em;
+    margin-bottom:1em;
 }
 
 .upcoming,
 .team-login {
-    color: white;
-    margin: .5em;
+    color:white;
+    margin:.5em;
 }
 
 
@@ -143,15 +143,15 @@ nav ul {
 .upcoming,
 .team-login,
 .home-1 {
-    margin: 3em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin:3em;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 
 .carousel-item {
-    text-align: center;
+    text-align:center;
 }
 
 #aboutUsCarousel img {
@@ -178,19 +178,19 @@ nav ul {
 }
 
 .profile-pic {
-    border-radius: 50%;
-    width: 20%;
+    border-radius:50%;
+    width:20%;
 }
 
 .MattBullets,
 .AaronBullets {
     display: table;
     margin: 2em auto;
-    text-align: left;
+    text-align:left;
 }
 
 .accomplishments {
-    text-align: left;
+    text-align:left;
 }
 
 .MattBullets a,
@@ -202,29 +202,23 @@ nav ul {
 .MattBio,
 .AaronBio {
     padding-left: 1em;
-    text-align: left;
+    text-align:left;
 }
 
-.admin,
-.login,
-.register,
 .application {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
-
-
 
 #footer {
     text-align: center;
 }
 
 .videoEmbed {
-    text-align: center;
+    text-align:center;
 }
 
 .mediaRow1 {
-    display: flex
+    display:flex
 }

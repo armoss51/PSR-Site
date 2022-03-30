@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CreateAccount.aspx.cs" Inherits="PSR_Site.CreateAccount" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MEDIA.aspx.cs" Inherits="PSR_Site.Gallery" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Create Account</title>
+    <title>MEDIA</title>
     <script src="Scripts/jquery-3.6.0.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
@@ -17,7 +17,7 @@
             <div class="row">
                 <div class="top-bar col-sm-12">
                     <nav class="navbar navbar-expand-sm navbar-dark bg-black">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseSocial">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSocial">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div id="collapseSocial" class="collapse navbar-collapse">
@@ -47,22 +47,38 @@
                 </div>
                 <div class="col-sm-8 header-nav">
                     <nav class="navbar navbar-expand-sm navbar-dark bg-black">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div id="collapseNavbar" class="collapse navbar-collapse">
                             <ul class="navbar-nav align-bottom">
                                 <li class="nav-item"><a href="Home.aspx" class="nav-link">HOME</a></li>
                                 <li class="nav-item"><a href="AboutUs.aspx" class="nav-link">ABOUT US</a></li>
-                                <li class="nav-item"><a href="Gallery.aspx" class="nav-link">GALLERY</a></li>
+                                <li class="nav-item"><a href="MEDIA.aspx" class="nav-link">MEDIA</a></li>
                                 <li class="nav-item"><a href="Apply.aspx" class="nav-link">APPLY</a></li>
-                                <li class="nav-item"><a href="CreateAccount.aspx" class="nav-link">CREATE ACCOUNT</a></li>
+                                <li class="nav-item"><a href="DriverRegistration.aspx" class="nav-link">DRIVER REGISTRATION</a></li>
                                 <li class="nav-item"><a href="Login.aspx" class="nav-link">LOGIN</a></li>
                                 <li class="nav-item"><a href="Admin.aspx" class="nav-link">ADMIN</a></li>
                             </ul>
                         </div>
                     </nav>
                 </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-sm-12 videoEmbed">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vPx-N9_Ku0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" id="irVideo"></iframe>
+                </div>
+            </div>
+            <div class="row mediaRow1">
+                <img src="Images/AboutUsCarousel/car1.PNG" alt="Car at finish line" class="img-fluid w-50 img-thumbnail d-block mx-auto"/>
+                <img src="Images/AboutUsCarousel/car2.PNG" alt="Car at finish line" class="img-fluid w-50 img-thumbnail d-block mx-auto"/>
+                <img src="Images/AboutUsCarousel/car3.PNG" alt="Cars at finish line" class="img-fluid w-50 img-thumbnail d-block mx-auto"/>
+            </div>
+            <div class="row mediaRow2">
+                <img src="Images/AboutUsCarousel/Car4.jpg" alt="pit stop" class="img-fluid w-50 img-thumbnail d-block mx-auto"/>
+                <img src="Images/AboutUsCarousel/car5.jpg" alt="car on track" class="img-fluid w-50 img-thumbnail d-block mx-auto"/>
+                <img src="Images/News/news1.jpg" alt="race track" class="img-fluid w-50 img-thumbnail d-block mx-auto"/>
             </div>
             <hr />
             <div class="row">

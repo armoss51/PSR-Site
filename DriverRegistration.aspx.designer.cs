@@ -11,7 +11,7 @@ namespace PSR_Site
 {
 
 
-    public partial class Admin
+    public partial class DriverRegistration
     {
 
         /// <summary>
@@ -24,93 +24,120 @@ namespace PSR_Site
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lblAddRegion control.
+        /// RegisterName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAddRegion;
+        protected global::System.Web.UI.WebControls.TextBox RegisterName;
 
         /// <summary>
-        /// adminRegionName control.
+        /// RegisterEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox adminRegionName;
+        protected global::System.Web.UI.WebControls.TextBox RegisterEmail;
 
         /// <summary>
-        /// btnAddRegion control.
+        /// RegisterCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddRegion;
+        protected global::System.Web.UI.WebControls.TextBox RegisterCode;
 
         /// <summary>
-        /// btnRegionClear control.
+        /// RegisterPassword1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegionClear;
+        protected global::System.Web.UI.WebControls.TextBox RegisterPassword1;
 
         /// <summary>
-        /// lblRegionMessage control.
+        /// RegisterPassword2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRegionMessage;
+        protected global::System.Web.UI.WebControls.TextBox RegisterPassword2;
 
         /// <summary>
-        /// lblAddCar control.
+        /// lblRegSelectRegion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAddCar;
+        protected global::System.Web.UI.WebControls.Label lblRegSelectRegion;
 
         /// <summary>
-        /// addCar control.
+        /// rblRegisterRegion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox addCar;
+        protected global::System.Web.UI.WebControls.RadioButtonList rblRegisterRegion;
 
         /// <summary>
-        /// btnAddCar control.
+        /// sdsPSR control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddCar;
+        protected global::System.Web.UI.WebControls.SqlDataSource sdsPSR;
 
         /// <summary>
-        /// btnCarClear control.
+        /// lblRegSelectCar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCarClear;
+        protected global::System.Web.UI.WebControls.Label lblRegSelectCar;
 
         /// <summary>
-        /// lblCarMessage control.
+        /// rblRegisterPrimaryCar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCarMessage;
+        protected global::System.Web.UI.WebControls.RadioButtonList rblRegisterPrimaryCar;
+
+        /// <summary>
+        /// sdsGetCar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource sdsGetCar;
+
+        /// <summary>
+        /// btnRegister control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnRegister;
+
+        /// <summary>
+        /// btnRegClear control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnRegClear;
     }
 }

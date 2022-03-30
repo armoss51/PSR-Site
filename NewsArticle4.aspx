@@ -56,7 +56,7 @@
                                 <li class="nav-item"><a href="AboutUs.aspx" class="nav-link">ABOUT US</a></li>
                                 <li class="nav-item"><a href="Gallery.aspx" class="nav-link">GALLERY</a></li>
                                 <li class="nav-item"><a href="Apply.aspx" class="nav-link">APPLY</a></li>
-                                <li class="nav-item"><a href="CreateAccount.aspx" class="nav-link">CREATE ACCOUNT</a></li>
+                                <li class="nav-item"><a href="DriverRegistration.aspx" class="nav-link">DRIVER REGISTRATION</a></li>
                                 <li class="nav-item"><a href="Login.aspx" class="nav-link">LOGIN</a></li>
                                 <li class="nav-item"><a href="Admin.aspx" class="nav-link">ADMIN</a></li>
                             </ul>
