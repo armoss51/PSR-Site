@@ -72,8 +72,9 @@
                     <br />
                     <asp:CheckBox ID="cbRememberMe" runat="server" Text="Remember Me"/>
                     <br />
-                    <asp:Button ID="btnApply" runat="server" Text="Apply" />
+                    <asp:Button ID="btnApply" runat="server" Text="Login" OnClick="btnApply_Click" />
                     <asp:Button ID="btnLoginClear" runat="server" Text="Clear" />
+                    <asp:Label ID="lblLoginMessage" runat="server" Text=""></asp:Label>
                 </div>
             </div>
             <hr />
