@@ -66,12 +66,17 @@
             </div>
             <hr />
             <div class="row">
-                <div class="col-sm-12 register">
-                    <asp:TextBox ID="RegisterName" runat="server" placeholder="Name"></asp:TextBox>
-                    <asp:TextBox ID="RegisterEmail" runat="server" placeholder="Email"></asp:TextBox>
-                    <asp:TextBox ID="RegisterCode" runat="server" placeholder="Member ID"></asp:TextBox>
-                    <asp:TextBox ID="RegisterPassword1" runat="server" placeholder="Password"></asp:TextBox>
-                    <asp:TextBox ID="RegisterPassword2" runat="server" placeholder="Re-Enter Password"></asp:TextBox>
+                <div class="col-sm-4">
+                    <asp:Label ID="lblRegisterMessage" runat="server" Text=""></asp:Label>
+                </div>
+                <div class="col-sm-4 register">
+                    <h3>Driver Registration</h3>
+                    <p>Your Member ID will be provided to you once your application has been accepted</p>
+                    <asp:TextBox ID="RegisterName" runat="server" placeholder="Name" class="mt-5"></asp:TextBox>
+                    <asp:TextBox ID="RegisterEmail" runat="server" placeholder="Email" class="mt-2"></asp:TextBox>
+                    <asp:TextBox ID="RegisterCode" runat="server" placeholder="Member ID" class="mt-2"></asp:TextBox>
+                    <asp:TextBox ID="RegisterPassword1" runat="server" placeholder="Password" class="mt-2"></asp:TextBox>
+                    <asp:TextBox ID="RegisterPassword2" runat="server" placeholder="Re-Enter Password" class="mt-2"></asp:TextBox>
                     <br />
                     <asp:Label ID="lblRegSelectRegion" runat="server" Text="Select Your Region:"></asp:Label>
                     <asp:RadioButtonList ID="rblRegisterRegion" runat="server" DataSourceID="sdsPSR" DataTextField="RegionName" DataValueField="RegionID"></asp:RadioButtonList>
@@ -84,6 +89,17 @@
                     <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" />
                     <asp:Button ID="btnRegClear" runat="server" Text="Clear" />
                     <asp:Label ID="lblRegMessage" runat="server" Text=""></asp:Label>
+                </div>
+                <div class="col-sm-4">
+                    <asp:RequiredFieldValidator ID="rfvRegisterName" runat="server" ErrorMessage="* required" ControlToValidate="RegisterName" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfvRegisterEmail" runat="server" ErrorMessage="* required" ControlToValidate="RegisterEmail" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="regxRegisterEmail" runat="server" ErrorMessage="* please enter valid email" ControlToValidate="RegisterEmail" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="rfvRegisterCode" runat="server" ErrorMessage="* required" ControlToValidate="RegisterCode" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                    <%--Code validator of some sort here?--%>
+                    <asp:RequiredFieldValidator ID="rfvRegisterPassword1" runat="server" ErrorMessage="* required" ControlToValidate="RegisterPassword1" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfvRegisterPassword2" runat="server" ErrorMessage="* required" ControlToValidate="RegisterPassword2" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfvRegisterRegion" runat="server" ErrorMessage="* required" ControlToValidate="rblRegisterRegion" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfvRegisterCar" runat="server" ErrorMessage="* required" ControlToValidate="rblRegisterPrimaryCar" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
                 </div>
             </div>
             <hr />
