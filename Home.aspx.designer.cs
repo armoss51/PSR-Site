@@ -24,15 +24,6 @@ namespace PSR_Site
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// btnIracingSignup control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnIracingSignup;
-
-        /// <summary>
         /// btnTeamLoginGo control.
         /// </summary>
         /// <remarks>
