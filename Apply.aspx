@@ -66,20 +66,36 @@
             </div>
             <hr />
             <div class="row">
-                <div class="col-sm-12 application">
-                    <asp:TextBox ID="ApplyName" runat="server" placeholder="Name"></asp:TextBox>
-                    <asp:TextBox ID="ApplyEmail" runat="server" placeholder="Email"></asp:TextBox>
-                    <asp:TextBox ID="ApplyIracingName" runat="server" placeholder="iRacing Name"></asp:TextBox>
-                    <asp:TextBox ID="ApplyDiscordName" runat="server" placeholder="Discord name (Include digits)"></asp:TextBox>
+                <div class="col-sm-4 AppMessageBox">
+                    <asp:Label ID="lblAppMessage" runat="server" Text=""></asp:Label>
+                </div>
+                <div class="col-sm-4 application">
+                    <h3>Interested in joining our team?</h3>
+                    <p>Fill out our application!</p>
+                    <asp:TextBox ID="ApplyName" runat="server" placeholder="Name" class="mt-5"></asp:TextBox>
+                    <asp:TextBox ID="ApplyEmail" runat="server" placeholder="Email" class="mt-2"></asp:TextBox>
+                    <asp:TextBox ID="ApplyIracingName" runat="server" placeholder="iRacing Name" class="mt-2"></asp:TextBox>
+                    <asp:TextBox ID="ApplyDiscordName" runat="server" placeholder="Discord name" class="mt-2"></asp:TextBox>
                     <br />
                     <asp:Label ID="lblApplySelectRegion" runat="server" Text="Select Your Region:"></asp:Label>
-                    <asp:RadioButtonList ID="rblApplyRegion" runat="server"></asp:RadioButtonList>
+                    <asp:RadioButtonList ID="rblApplyRegion" runat="server" DataSourceID="sdsApplyRegion" DataTextField="RegionName" DataValueField="RegionID"></asp:RadioButtonList>
+                    <asp:SqlDataSource ID="sdsApplyRegion" runat="server" ConnectionString="<%$ ConnectionStrings:S22_ksarmossConnectionString %>" SelectCommand="spGetRegion" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                     <br />
                     <asp:Label ID="lblapplySelectCar" runat="server" Text="Select Your Primary Car Type:"></asp:Label>
-                    <asp:RadioButtonList ID="rblApplyPrimaryCar" runat="server"></asp:RadioButtonList>
+                    <asp:RadioButtonList ID="rblApplyPrimaryCar" runat="server" DataSourceID="sdsApplyCar" DataTextField="CarName" DataValueField="CarID"></asp:RadioButtonList>
+                    <asp:SqlDataSource ID="sdsApplyCar" runat="server" ConnectionString="<%$ ConnectionStrings:S22_ksarmossConnectionString %>" SelectCommand="spGetCar" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                     <br />
-                    <asp:Button ID="btnApply" runat="server" Text="Submit" />
-                    <asp:Button ID="btnClear" runat="server" Text="Clear" />
+                    <asp:Button ID="btnApply" runat="server" Text="Submit" OnClick="btnApply_Click" class="btn-close-white"/>
+                    <asp:Button ID="btnClear" runat="server" Text="Clear" class="btn-close-white mt-2" />
+                </div>
+                <div class="col-sm-4 AppValid">
+                    <asp:RequiredFieldValidator ID="rfvApplyName" runat="server" ErrorMessage="* required" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ControlToValidate="ApplyName" class="mt-5"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfvApplyEmail" runat="server" ErrorMessage="* required" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ControlToValidate="ApplyEmail" class="mt-3"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="regxApplyEmail" runat="server" ErrorMessage="* Please enter valid email" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ControlToValidate="ApplyEmail" class="mt-3" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ></asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="rfvApplyIracingName" runat="server" ErrorMessage="* required" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ControlToValidate="ApplyIracingName" class="mt-3"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfvApplyDiscordName" runat="server" ErrorMessage="* required" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ControlToValidate ="ApplyDiscordName" class="mt-3"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfvApplyRegion" runat="server" ErrorMessage="* required" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ControlToValidate="rblApplyRegion" class="mt-5"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfvApplyPrimaryCar" runat="server" ErrorMessage="* required" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ControlToValidate="rblApplyPrimaryCar" ></asp:RequiredFieldValidator>
                 </div>
             </div>
             <hr />

@@ -136,7 +136,7 @@
             <div class="row home-tiles">
                 <div class="col-sm-4 home-1">
                     <h4 class="">Interested in getting started with iRacing?</h4>
-                    <asp:Button ID="btnIracingSignup" runat="server" Text="Sign Up at iRacing.com" />
+                    <asp:Button ID="btnIracingSignup" runat="server" Text="Sign Up at iRacing.com" OnClick="btnIracingSignup_Click" />
                     <ul>
                         <li>World's premier motorsport racing simulation</li>
                         <li>Officially licensed car replicas</li>
@@ -157,7 +157,7 @@
                 </div>
                 <div class="col-sm-4 team-login">
                     <h4>Team Members Login Here:</h4>
-                    <asp:Button ID="btnTeamLoginGo" runat="server" Text="Go To Login" />
+                    <asp:Button ID="btnTeamLoginGo" runat="server" Text="Go To Login" OnClick="btnTeamLoginGo_Click" />
                 </div>
             </div>
             <hr />

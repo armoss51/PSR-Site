@@ -13,5 +13,15 @@ namespace PSR_Site
         {
 
         }
+
+        protected void btnTeamLoginGo_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
+        }
+
+        protected void btnIracingSignup_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("https://www.iracing.com/");
+        }
     }
 }

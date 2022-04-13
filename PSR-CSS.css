@@ -215,7 +215,23 @@ nav ul {
     align-items:center;
 }
 
+.AppValid {
+    display: flex;
+    flex-direction: column;
+}
 
+.AppMessageBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #B91917;
+}
+
+#rfvApplyPrimaryCar {
+    margin-top:5em;
+}
 
 #footer {
     text-align: center;
