@@ -204,13 +204,22 @@ namespace PSR_Site
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRegisterPassword1;
 
         /// <summary>
-        /// rfvRegisterPassword2 control.
+        /// regxRegisterPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRegisterPassword2;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regxRegisterPassword;
+
+        /// <summary>
+        /// cvRegisterPassword2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cvRegisterPassword2;
 
         /// <summary>
         /// rfvRegisterRegion control.

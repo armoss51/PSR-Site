@@ -86,18 +86,19 @@
                     <asp:RadioButtonList ID="rblRegisterPrimaryCar" runat="server" DataSourceID="sdsGetCar" DataTextField="CarName" DataValueField="CarID"></asp:RadioButtonList>
                     <asp:SqlDataSource ID="sdsGetCar" runat="server" ConnectionString="<%$ ConnectionStrings:S22_ksarmossConnectionString %>" SelectCommand="spGetCar" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                     <br />
-                    <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" />
-                    <asp:Button ID="btnRegClear" runat="server" Text="Clear" />
+                    <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" class="btn-close-white"/>
+                    <asp:Button ID="btnRegClear" runat="server" Text="Clear" class="btn-close-white mt-2"/>
                     <asp:Label ID="lblRegMessage" runat="server" Text=""></asp:Label>
                 </div>
                 <div class="col-sm-4">
                     <asp:RequiredFieldValidator ID="rfvRegisterName" runat="server" ErrorMessage="* required" ControlToValidate="RegisterName" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
                     <asp:RequiredFieldValidator ID="rfvRegisterEmail" runat="server" ErrorMessage="* required" ControlToValidate="RegisterEmail" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="regxRegisterEmail" runat="server" ErrorMessage="* please enter valid email" ControlToValidate="RegisterEmail" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="regxRegisterEmail" runat="server" ErrorMessage="* please enter valid email" ControlToValidate="RegisterEmail" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                     <asp:RequiredFieldValidator ID="rfvRegisterCode" runat="server" ErrorMessage="* required" ControlToValidate="RegisterCode" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
                     <%--Code validator of some sort here?--%>
                     <asp:RequiredFieldValidator ID="rfvRegisterPassword1" runat="server" ErrorMessage="* required" ControlToValidate="RegisterPassword1" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
-                    <asp:RequiredFieldValidator ID="rfvRegisterPassword2" runat="server" ErrorMessage="* required" ControlToValidate="RegisterPassword2" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="regxRegisterPassword" runat="server" ErrorMessage="Requirements: minimum of 8 characters, at least 1 upper and 1 lower case letter, at least 1 special character, at least 1 number" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ControlToValidate="RegisterPassword1" ValidationExpression="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$"></asp:RegularExpressionValidator>
+                    <asp:CompareValidator ID="cvRegisterPassword2" runat="server" ErrorMessage="* passwords must match" ControlToValidate="RegisterPassword2" ControlToCompare="RegisterPassword1" ValueToCompare="RegisterPassword2" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:CompareValidator>
                     <asp:RequiredFieldValidator ID="rfvRegisterRegion" runat="server" ErrorMessage="* required" ControlToValidate="rblRegisterRegion" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
                     <asp:RequiredFieldValidator ID="rfvRegisterCar" runat="server" ErrorMessage="* required" ControlToValidate="rblRegisterPrimaryCar" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
                 </div>

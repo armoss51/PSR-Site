@@ -67,13 +67,14 @@
             <hr />
             <div class="row">
                 <div class="col-sm-12 login">
-                    <asp:TextBox ID="LoginEmail" runat="server" placeholder="Email"></asp:TextBox>
-                    <asp:TextBox ID="LoginPassword" runat="server" placeholder="Password"></asp:TextBox>
+                    <h3>Login</h3>
+                    <asp:TextBox ID="LoginEmail" runat="server" placeholder="Email" class="mt-5"></asp:TextBox>
+                    <asp:TextBox ID="LoginPassword" runat="server" placeholder="Password" class="mt-2"></asp:TextBox>
                     <br />
                     <asp:CheckBox ID="cbRememberMe" runat="server" Text="Remember Me"/>
                     <br />
-                    <asp:Button ID="btnApply" runat="server" Text="Login" OnClick="btnApply_Click" />
-                    <asp:Button ID="btnLoginClear" runat="server" Text="Clear" />
+                    <asp:Button ID="btnApply" runat="server" Text="Login" OnClick="btnApply_Click" class="btn-close-white" />
+                    <asp:Button ID="btnLoginClear" runat="server" Text="Clear" class="btn-close-white mt-2"/>
                     <asp:Label ID="lblLoginMessage" runat="server" Text=""></asp:Label>
                 </div>
             </div>
