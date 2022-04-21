@@ -66,7 +66,7 @@
             </div>
             <hr />
             <div class="row">
-                <div class="col-sm-12 jumbotron register">
+                <div class="col-sm-12 jumbotron application">
                     <h3>Driver Registration</h3>
                 </div>
                 <div class="row">
@@ -77,7 +77,7 @@
                         <asp:TextBox ID="RegisterName" runat="server" placeholder="Name" class="mt-5"></asp:TextBox>
                     </div>
                     <div class="col-sm-4 AppValid">
-                        <asp:RequiredFieldValidator ID="rfvRegisterName" runat="server" ErrorMessage="* required" ControlToValidate="RegisterName" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvRegisterName" runat="server" ErrorMessage="* required" ControlToValidate="RegisterName" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" class="mt-5"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row">
@@ -88,8 +88,8 @@
                         <asp:TextBox ID="RegisterEmail" runat="server" placeholder="Email" class="mt-2"></asp:TextBox>
                     </div>
                     <div class="col-sm-4 AppValid">
-                        <asp:RequiredFieldValidator ID="rfvRegisterEmail" runat="server" ErrorMessage="* required" ControlToValidate="RegisterEmail" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="regxRegisterEmail" runat="server" ErrorMessage="* please enter valid email" ControlToValidate="RegisterEmail" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                        <asp:RequiredFieldValidator ID="rfvRegisterEmail" runat="server" ErrorMessage="* required" ControlToValidate="RegisterEmail" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" class="mt-3"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="regxRegisterEmail" runat="server" ErrorMessage="* please enter valid email" ControlToValidate="RegisterEmail" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" class="mt-3"></asp:RegularExpressionValidator>
                     </div>
                 </div>
                 <div class="row">
@@ -97,11 +97,11 @@
 
                     </div>
                     <div class="col-sm-4 application">
-                        <asp:TextBox ID="RegisterPassword1" runat="server" placeholder="Password" class="mt-2"></asp:TextBox>
+                        <asp:TextBox ID="RegisterPassword1" runat="server" placeholder="Password" class="mt-2" type="password"></asp:TextBox>
                     </div>
                     <div class="col-sm-4 AppValid">
-                        <asp:RequiredFieldValidator ID="rfvRegisterPassword1" runat="server" ErrorMessage="* required" ControlToValidate="RegisterPassword1" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="regxRegisterPassword" runat="server" ErrorMessage="Requirements: minimum of 8 characters, at least 1 upper and 1 lower case letter, at least 1 special character, at least 1 number" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ControlToValidate="RegisterPassword1" ValidationExpression="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$"></asp:RegularExpressionValidator>
+                        <asp:RequiredFieldValidator ID="rfvRegisterPassword1" runat="server" ErrorMessage="* required" ControlToValidate="RegisterPassword1" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" class="mt-3"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="regxRegisterPassword" runat="server" ErrorMessage="Requirements: minimum of 8 characters, at least 1 upper and 1 lower case letter, at least 1 special character, at least 1 number" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ControlToValidate="RegisterPassword1" ValidationExpression="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$" class="mt-3"></asp:RegularExpressionValidator>
                     </div>
                 </div>
                 <div class="row">
@@ -109,10 +109,10 @@
 
                     </div>
                     <div class="col-sm-4 application">
-                        <asp:TextBox ID="RegisterPassword2" runat="server" placeholder="Re-Enter Password" class="mt-2"></asp:TextBox>
+                        <asp:TextBox ID="RegisterPassword2" runat="server" placeholder="Re-Enter Password" class="mt-2" type="password"></asp:TextBox>
                     </div>
                     <div class="col-sm-4 AppValid">
-                        <asp:CompareValidator ID="cvRegisterPassword2" runat="server" ErrorMessage="* passwords must match" ControlToValidate="RegisterPassword2" ControlToCompare="RegisterPassword1" ValueToCompare="RegisterPassword2" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:CompareValidator>
+                        <asp:CompareValidator ID="cvRegisterPassword2" runat="server" ErrorMessage="* passwords must match" ControlToValidate="RegisterPassword2" ControlToCompare="RegisterPassword1" ValueToCompare="RegisterPassword2" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" class="mt-3"></asp:CompareValidator>
                     </div>
                 </div>
                 <br />
@@ -126,7 +126,7 @@
                         <asp:SqlDataSource ID="sdsPSR" runat="server" ConnectionString="<%$ ConnectionStrings:S22_ksarmossConnectionString %>" SelectCommand="spGetRegion" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                     </div>
                     <div class="col-sm-4 AppValid">
-                        <asp:RequiredFieldValidator ID="rfvRegisterRegion" runat="server" ErrorMessage="* required" ControlToValidate="rblRegisterRegion" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvRegisterRegion" runat="server" ErrorMessage="* required" ControlToValidate="rblRegisterRegion" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" class="mt-3"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <br />
@@ -140,7 +140,7 @@
                         <asp:SqlDataSource ID="sdsGetCar" runat="server" ConnectionString="<%$ ConnectionStrings:S22_ksarmossConnectionString %>" SelectCommand="spGetCar" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                     </div>
                     <div class="col-sm-4 AppValid">
-                        <asp:RequiredFieldValidator ID="rfvRegisterCar" runat="server" ErrorMessage="* required" ControlToValidate="rblRegisterPrimaryCar" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvRegisterCar" runat="server" ErrorMessage="* required" ControlToValidate="rblRegisterPrimaryCar" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" class="mt-3"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row">

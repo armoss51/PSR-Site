@@ -68,5 +68,12 @@ namespace PSR_Site
                 }
             }
         }
+
+        protected void btnLoginClear_Click(object sender, EventArgs e)
+        {
+            LoginEmail.Text = "";
+            LoginPassword.Text = "";
+            cbRememberMe.Checked = false;
+        }
     }
 }

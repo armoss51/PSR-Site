@@ -8,7 +8,7 @@
     <script src="Scripts/jquery-3.6.0.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="PSR-CSS.css" rel="stylesheet" />   
+    <link href="PSR-CSS.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
@@ -66,6 +66,64 @@
             </div>
             <hr />
             <div class="row">
+                <div class="col-sm-12 jumbotron application">
+                    <h3>Login</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+
+                    </div>
+                    <div class="col-sm-4 application">
+                        <asp:TextBox ID="LoginEmail" runat="server" placeholder="Email" class="mt-5"></asp:TextBox>
+                    </div>
+                    <div class="col-sm-4 AppValid">
+                        <asp:RequiredFieldValidator ID="rfvLoginEmail" runat="server" ErrorMessage="* required" ControlToValidate="LoginEmail" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" class="mt-5"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="regxLoginEmail" runat="server" ErrorMessage="* please enter valid email" ControlToValidate="LoginEmail" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" class="mt-5"></asp:RegularExpressionValidator>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+
+                    </div>
+                    <div class="col-sm-4 application">
+                        <asp:TextBox ID="LoginPassword" runat="server" placeholder="Password" class="mt-2" type="password"></asp:TextBox>
+                    </div>
+                    <div class="col-sm-4 AppValid">
+                        <asp:RequiredFieldValidator ID="rfvLoginPassword" runat="server" ErrorMessage="* required" ControlToValidate="LoginPassword" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" class="mt-3"></asp:RequiredFieldValidator>
+                    </div>
+                </div>
+                <br />
+                <div class="row mt-3">
+                    <div class="col-sm-4">
+
+                    </div>
+                    <div class="col-sm-4 app-buttons">
+                        <asp:CheckBox ID="cbRememberMe" runat="server" Text="Remember Me"/>
+                    </div>
+                    <div class="col-sm-4">
+
+                    </div>
+                </div>
+                <br />
+                <div class="row mt-3">
+                    <div class="col-sm-4">
+
+                    </div>
+                    <div class="col-sm-4 app-buttons">
+                        <asp:Button ID="btnApply" runat="server" Text="Login" OnClick="btnApply_Click" class="btn-close-white" />
+                        <asp:Button ID="btnLoginClear" runat="server" Text="Clear" class="btn-close-white" CausesValidation="False" OnClick="btnLoginClear_Click"/>
+                    </div>
+                    <div class="col-sm-4">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <asp:Label ID="lblLoginMessage" runat="server" Text=""></asp:Label>
+                    </div>                    
+                </div>
+            </div>
+            <%-- <div class="row">
                 <div class="col-sm-12 login">
                     <h3>Login</h3>
                     <asp:TextBox ID="LoginEmail" runat="server" placeholder="Email" class="mt-5"></asp:TextBox>
@@ -77,7 +135,7 @@
                     <asp:Button ID="btnLoginClear" runat="server" Text="Clear" class="btn-close-white mt-2"/>
                     <asp:Label ID="lblLoginMessage" runat="server" Text=""></asp:Label>
                 </div>
-            </div>
+            </div>--%>
             <hr />
             <div class="row">
                 <div class="col-sm-12">

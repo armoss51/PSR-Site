@@ -33,6 +33,24 @@ namespace PSR_Site
         protected global::System.Web.UI.WebControls.TextBox LoginEmail;
 
         /// <summary>
+        /// rfvLoginEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLoginEmail;
+
+        /// <summary>
+        /// regxLoginEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regxLoginEmail;
+
+        /// <summary>
         /// LoginPassword control.
         /// </summary>
         /// <remarks>
@@ -40,6 +58,15 @@ namespace PSR_Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox LoginPassword;
+
+        /// <summary>
+        /// rfvLoginPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLoginPassword;
 
         /// <summary>
         /// cbRememberMe control.

@@ -47,6 +47,7 @@ namespace PSR_Site
                     RegisterName.Text = "";
                     RegisterEmail.Text = "";
                     RegisterPassword1.Text = "";
+                    RegisterPassword2.Text = "";
                     rblRegisterRegion.SelectedIndex = -1;
                     rblRegisterPrimaryCar.SelectedIndex = -1;
                     lblRegMessage.Text = "";
@@ -66,6 +67,7 @@ namespace PSR_Site
             RegisterName.Text = "";
             RegisterEmail.Text = "";
             RegisterPassword1.Text = "";
+            RegisterPassword2.Text = "";
             rblRegisterRegion.SelectedIndex = -1;
             rblRegisterPrimaryCar.SelectedIndex = -1;
             lblRegMessage.Text = "";
