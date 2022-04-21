@@ -25,6 +25,7 @@ namespace PSR_Site
             //Create instance of sqlConnection class
             using (SqlConnection sqlConn = new SqlConnection(strConn))
             {
+                //Populate database with user info
                 SqlCommand InsertCmd = new SqlCommand("spDriverRegistration", sqlConn);
                 InsertCmd.CommandType = CommandType.StoredProcedure;
 
@@ -38,6 +39,7 @@ namespace PSR_Site
                 MemberIDOutput.Direction = ParameterDirection.Output;
                 InsertCmd.Parameters.Add(MemberIDOutput);
 
+                //Error testing
                 try
                 {
                     sqlConn.Open();
@@ -64,6 +66,8 @@ namespace PSR_Site
 
         protected void btnRegClear_Click(object sender, EventArgs e)
         {
+
+            //Clear all fields
             RegisterName.Text = "";
             RegisterEmail.Text = "";
             RegisterPassword1.Text = "";
@@ -71,6 +75,36 @@ namespace PSR_Site
             rblRegisterRegion.SelectedIndex = -1;
             rblRegisterPrimaryCar.SelectedIndex = -1;
             lblRegMessage.Text = "";
+        }
+
+        protected void valNewMemberEmail_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+
+            //Validate if new member has entered an approved email into registration form
+            string strConn = ConfigurationManager.ConnectionStrings["S22_ksarmossConnectionString"].ConnectionString;
+
+            using (SqlConnection sqlConn = new SqlConnection(strConn))
+            {
+                SqlDataAdapter sqldaValidateUser = new SqlDataAdapter("spValidateNewMember", sqlConn);
+                sqldaValidateUser.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                sqldaValidateUser.SelectCommand.Parameters.AddWithValue("@ApprovedEmail", RegisterEmail.Text);
+
+                try
+                {
+                    DataSet dsUserRecord = new DataSet();
+                    sqldaValidateUser.Fill(dsUserRecord);
+
+                    if (dsUserRecord.Tables[0].Rows.Count == 0)
+                    {                        
+                        lblBadEmail.Text = "* This email address has not been approved for registration";
+                    }
+                }
+                catch (Exception exc)
+                {
+                    lblBadEmail.Text = exc.Message;
+                }
+            }
         }
     }
 }

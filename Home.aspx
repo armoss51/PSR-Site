@@ -17,9 +17,11 @@
 <body>
     <form id="form1" runat="server">
         <div class="container">
+            <%-- Social Media Links Menu --%>
             <div class="row">
                 <div class="top-bar col-sm-12">
                     <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+                        <%-- Make menu collapsable --%>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSocial">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -42,14 +44,17 @@
                     </nav>
                 </div>
             </div>
+            <%-- Header --%>
             <div class="row">
                 <div class="col-sm-4">
                     <a href="Home.aspx" class="navbar-brand">
                         <img src="Images/PSRlogo.png" alt="PSR Logo" class="headerLogo" />
                     </a>
                 </div>
+                <%-- Main Navigation Menu --%>
                 <div class="col-sm-8 header-nav">
                     <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+                        <%-- Make menu collapsable --%>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -68,6 +73,7 @@
                 </div>
             </div>
             <hr />
+            <%-- News Article Carousel --%>
             <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" class="active">
@@ -133,6 +139,7 @@
                 </button>
             </div>
             <hr />
+            <%-- Info Tiles --%>
             <div class="row home-tiles">
                 <div class="col-sm-4 home-1">
                     <h4 class="">Interested in getting started with iRacing?</h4>

@@ -14,9 +14,11 @@
 <body>
     <form id="form1" runat="server">
         <div class="container">
+            <%-- Social Media Links Menu --%>
             <div class="row">
                 <div class="top-bar col-sm-12">
                     <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+                        <%-- Make menu collapsable --%>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSocial">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -39,14 +41,17 @@
                     </nav>
                 </div>
             </div>
+            <%-- Header --%>
             <div class="row">
                 <div class="col-sm-4">
                     <a href="Home.aspx" class="navbar-brand">
                         <img src="Images/PSRlogo.png" alt="PSR Logo" class="headerLogo" />
                     </a>
                 </div>
+                <%-- Main Navigation Menu --%>
                 <div class="col-sm-8 header-nav">
                     <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+                        <%-- Make menu collapsable --%>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -65,6 +70,7 @@
                 </div>
             </div>
             <hr />
+            <%-- Application Form --%>
             <div class="row">
                 <div class="col-sm-12 jumbotron application">
                     <h3>Interested in joining our team?</h3>

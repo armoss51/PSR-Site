@@ -14,9 +14,11 @@
 <body>
     <form id="form1" runat="server">
         <div class="container">
+            <%-- Social Media Links Menu --%>
             <div class="row">
                 <div class="top-bar col-sm-12">
                     <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+                        <%-- Make menu collapsable --%>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSocial">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -39,14 +41,17 @@
                     </nav>
                 </div>
             </div>
+            <%-- Header --%>
             <div class="row">
                 <div class="col-sm-4">
                     <a href="Home.aspx" class="navbar-brand">
                         <img src="Images/PSRlogo.png" alt="PSR Logo" class="headerLogo" />
                     </a>
                 </div>
+                <%-- Main Navigation Menu --%>
                 <div class="col-sm-8 header-nav">
                     <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+                        <%-- Make menu collapsable --%>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -65,11 +70,13 @@
                 </div>
             </div>
             <hr />
+            <%-- Admin panel --%>
             <div class="row">
                 <div class="col-sm-12 jumbotron application">
                     <h3>Admin Panel</h3>
                 </div>
                 <div class="row">
+                    <%-- Add a region --%>
                     <div class="col-sm-4 application">
 
                         <asp:Label ID="lblAddRegion" runat="server" Text="Add Region:"></asp:Label>
@@ -82,6 +89,7 @@
                         </div>
                         <asp:Label ID="lblRegionMessage" runat="server" Text=""></asp:Label>
                     </div>
+                    <%-- Add a car --%>
                     <div class="col-sm-4 application">
                         <asp:Label ID="lblAddCar" runat="server" Text="Add Car:"></asp:Label>
                         <asp:TextBox ID="addCar" runat="server" placeholder="Car Name" ValidationGroup="2" class="mt-2"></asp:TextBox>
@@ -93,6 +101,7 @@
                         </div>
                         <asp:Label ID="lblCarMessage" runat="server" Text=""></asp:Label>
                     </div>
+                    <%-- Add an approved email --%>
                     <div class="col-sm-4 application">
                         <asp:Label ID="lblAddNewMember" runat="server" Text="Add New Member Email:"></asp:Label>
                         <asp:TextBox ID="tboxAddNewMember" runat="server" placeholder="Email" ValidationGroup="3" class="mt-2"></asp:TextBox>

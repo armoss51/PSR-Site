@@ -14,9 +14,11 @@
 <body>
     <form id="form1" runat="server">
         <div class="container">
+            <%-- Social Media Links Menu --%>
             <div class="row">
                 <div class="top-bar col-sm-12">
                     <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+                        <%-- Make menu collapsable --%>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSocial">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -39,14 +41,17 @@
                     </nav>
                 </div>
             </div>
+            <%-- Header --%>
             <div class="row">
                 <div class="col-sm-4">
                     <a href="Home.aspx" class="navbar-brand">
                         <img src="Images/PSRlogo.png" alt="PSR Logo" class="headerLogo" />
                     </a>
                 </div>
+                <%-- Main Navigation Menu --%>
                 <div class="col-sm-8 header-nav">
                     <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+                        <%-- Make menu collapsable --%>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -65,13 +70,14 @@
                 </div>
             </div>
             <hr />
+            <%-- Registration Form --%>
             <div class="row">
                 <div class="col-sm-12 jumbotron application">
                     <h3>Driver Registration</h3>
                 </div>
                 <div class="row">
                     <div class="col-sm-4">
-
+                          
                     </div>
                     <div class="col-sm-4 application">
                         <asp:TextBox ID="RegisterName" runat="server" placeholder="Name" class="mt-5"></asp:TextBox>
@@ -90,6 +96,8 @@
                     <div class="col-sm-4 AppValid">
                         <asp:RequiredFieldValidator ID="rfvRegisterEmail" runat="server" ErrorMessage="* required" ControlToValidate="RegisterEmail" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" class="mt-3"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="regxRegisterEmail" runat="server" ErrorMessage="* please enter valid email" ControlToValidate="RegisterEmail" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" class="mt-3"></asp:RegularExpressionValidator>
+                        <asp:CustomValidator ID="valNewMemberEmail" runat="server" ErrorMessage="* This email address has not been approved for registration" ControlToValidate="RegisterEmail" OnServerValidate="valNewMemberEmail_ServerValidate" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ></asp:CustomValidator>
+                        <asp:Label ID="lblBadEmail" runat="server" Text=""></asp:Label>
                     </div>
                 </div>
                 <div class="row">
@@ -150,7 +158,6 @@
                     <div class="col-sm-4 app-buttons">
                         <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" class="btn-close-white"/>
                         <asp:Button ID="btnRegClear" runat="server" Text="Clear" class="btn-close-white mt-2" CausesValidation="False" OnClick="btnRegClear_Click"/>
-                        <asp:Label ID="lblRegMessage" runat="server" Text=""></asp:Label>
                     </div>
                     <div class="col-sm-4">
 
@@ -158,7 +165,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12 AppMessageBox">
-                        <asp:Label ID="lblRegisterMessage" runat="server" Text=""></asp:Label>
+                        <asp:Label ID="lblRegMessage" runat="server" Text=""></asp:Label>
                     </div>
                 </div>
             </div>

@@ -71,6 +71,8 @@ namespace PSR_Site
 
         protected void btnLoginClear_Click(object sender, EventArgs e)
         {
+
+            //Clear all fields
             LoginEmail.Text = "";
             LoginPassword.Text = "";
             cbRememberMe.Checked = false;

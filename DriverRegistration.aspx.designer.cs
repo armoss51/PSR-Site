@@ -69,6 +69,24 @@ namespace PSR_Site
         protected global::System.Web.UI.WebControls.RegularExpressionValidator regxRegisterEmail;
 
         /// <summary>
+        /// valNewMemberEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator valNewMemberEmail;
+
+        /// <summary>
+        /// lblBadEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblBadEmail;
+
+        /// <summary>
         /// RegisterPassword1 control.
         /// </summary>
         /// <remarks>
@@ -211,14 +229,5 @@ namespace PSR_Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblRegMessage;
-
-        /// <summary>
-        /// lblRegisterMessage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRegisterMessage;
     }
 }
