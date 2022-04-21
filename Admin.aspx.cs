@@ -77,5 +77,50 @@ namespace PSR_Site
             }
 
         }
+
+        protected void btnAddNewMember_Click(object sender, EventArgs e)
+        {
+            string strConn = ConfigurationManager.ConnectionStrings["S22_ksarmossConnectionString"].ConnectionString;
+
+            using (SqlConnection sqlConn = new SqlConnection(strConn))
+            {
+                SqlCommand InsertCmd = new SqlCommand("spInsertApproval", sqlConn);
+                InsertCmd.CommandType = CommandType.StoredProcedure;
+
+                InsertCmd.Parameters.AddWithValue("@ApprovedEmail", tboxAddNewMember.Text);
+
+                SqlParameter ApprovalIDOutput = new SqlParameter("@OutputApprovalID", SqlDbType.Int);
+                ApprovalIDOutput.Direction = ParameterDirection.Output;
+                InsertCmd.Parameters.Add(ApprovalIDOutput);
+
+                try
+                {
+                    sqlConn.Open();
+                    InsertCmd.ExecuteNonQuery();
+                    Session["ApprovalID"] = ApprovalIDOutput.Value;
+                    lblNewMemberMessage.Text = "Email successfully added.";
+                    tboxAddNewMember.Text = "";
+                }
+                catch (Exception exc)
+                {
+                    lblRegionMessage.Text = exc.Message;
+                }
+            }
+        }
+
+        protected void btnNewMemberClear_Click(object sender, EventArgs e)
+        {
+            tboxAddNewMember.Text = "";
+        }
+
+        protected void btnRegionClear_Click(object sender, EventArgs e)
+        {
+            adminRegionName.Text = "";
+        }
+
+        protected void btnCarClear_Click(object sender, EventArgs e)
+        {
+            addCar.Text = "";
+        }
     }
 }

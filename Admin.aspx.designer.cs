@@ -42,6 +42,15 @@ namespace PSR_Site
         protected global::System.Web.UI.WebControls.TextBox adminRegionName;
 
         /// <summary>
+        /// rfvAddRegion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAddRegion;
+
+        /// <summary>
         /// btnAddRegion control.
         /// </summary>
         /// <remarks>
@@ -87,6 +96,15 @@ namespace PSR_Site
         protected global::System.Web.UI.WebControls.TextBox addCar;
 
         /// <summary>
+        /// rfvAddCar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAddCar;
+
+        /// <summary>
         /// btnAddCar control.
         /// </summary>
         /// <remarks>
@@ -112,5 +130,68 @@ namespace PSR_Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblCarMessage;
+
+        /// <summary>
+        /// lblAddNewMember control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblAddNewMember;
+
+        /// <summary>
+        /// tboxAddNewMember control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tboxAddNewMember;
+
+        /// <summary>
+        /// rfvAddNewMember control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAddNewMember;
+
+        /// <summary>
+        /// regxAddMember control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regxAddMember;
+
+        /// <summary>
+        /// btnAddNewMember control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAddNewMember;
+
+        /// <summary>
+        /// btnNewMemberClear control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnNewMemberClear;
+
+        /// <summary>
+        /// lblNewMemberMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNewMemberMessage;
     }
 }

@@ -8,7 +8,7 @@
     <script src="Scripts/jquery-3.6.0.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="PSR-CSS.css" rel="stylesheet" />
+    <link href="Content/PSR-CSS.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
@@ -66,34 +66,58 @@
             </div>
             <hr />
             <div class="row">
-                <div class="col-sm-6 admin">
-                    <asp:Label ID="lblAddRegion" runat="server" Text="Add Region:"></asp:Label>
-                    <asp:TextBox ID="adminRegionName" runat="server" placeholder="Region Name"></asp:TextBox>
-                    <br />
-                    <asp:Button ID="btnAddRegion" runat="server" Text="Submit" OnClick="btnAddRegion_Click" class="btn-close-white"/>
-                    <asp:Button ID="btnRegionClear" runat="server" Text="Clear" class="btn-close-white mt-2"/>
-                    <asp:Label ID="lblRegionMessage" runat="server" Text=""></asp:Label>
+                <div class="col-sm-12 jumbotron application">
+                    <h3>Admin Panel</h3>
                 </div>
-                <div class="col-sm-6 admin">
-                    <asp:Label ID="lblAddCar" runat="server" Text="Add Car:"></asp:Label>
-                    <asp:TextBox ID="addCar" runat="server" placeholder="Car Name"></asp:TextBox>
-                    <br />
-                    <asp:Button ID="btnAddCar" runat="server" Text="Submit" OnClick="btnAddCar_Click" class="btn-close-white"/>
-                    <asp:Button ID="btnCarClear" runat="server" Text="Clear" class="btn-close-white mt-2"/>
-                    <asp:Label ID="lblCarMessage" runat="server" Text=""></asp:Label>
+                <div class="row">
+                    <div class="col-sm-4 application">
+
+                        <asp:Label ID="lblAddRegion" runat="server" Text="Add Region:"></asp:Label>
+                        <asp:TextBox ID="adminRegionName" runat="server" placeholder="Region Name" ValidationGroup="1" class="mt-2"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfvAddRegion" runat="server" ErrorMessage="* required" ControlToValidate="adminRegionName" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ValidationGroup="1"></asp:RequiredFieldValidator>
+                        <br />
+                        <div class="admin-buttons">
+                            <asp:Button ID="btnAddRegion" runat="server" Text="Submit" OnClick="btnAddRegion_Click" class="btn-close-white" ValidationGroup="1" />
+                            <asp:Button ID="btnRegionClear" runat="server" Text="Clear" class="btn-close-white" OnClick="btnRegionClear_Click" ValidationGroup="1" />
+                        </div>
+                        <asp:Label ID="lblRegionMessage" runat="server" Text=""></asp:Label>
+                    </div>
+                    <div class="col-sm-4 application">
+                        <asp:Label ID="lblAddCar" runat="server" Text="Add Car:"></asp:Label>
+                        <asp:TextBox ID="addCar" runat="server" placeholder="Car Name" ValidationGroup="2" class="mt-2"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfvAddCar" runat="server" ValidationGroup="2" ErrorMessage="* reuired" ControlToValidate="addCar" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                        <br />
+                        <div class="admin-buttons">
+                            <asp:Button ID="btnAddCar" runat="server" Text="Submit" OnClick="btnAddCar_Click" class="btn-close-white" ValidationGroup="2" />
+                            <asp:Button ID="btnCarClear" runat="server" Text="Clear" class="btn-close-white" OnClick="btnCarClear_Click" ValidationGroup="2" />
+                        </div>
+                        <asp:Label ID="lblCarMessage" runat="server" Text=""></asp:Label>
+                    </div>
+                    <div class="col-sm-4 application">
+                        <asp:Label ID="lblAddNewMember" runat="server" Text="Add New Member Email:"></asp:Label>
+                        <asp:TextBox ID="tboxAddNewMember" runat="server" placeholder="Email" ValidationGroup="3" class="mt-2"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfvAddNewMember" runat="server" ValidationGroup="3" ErrorMessage="* required" ControlToValidate="tboxAddNewMember" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="regxAddMember" runat="server" ValidationGroup="3" ErrorMessage="* Enter a valid email" ControlToValidate="tboxAddNewMember" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                        <br />
+                        <div class="admin-buttons">
+                            <asp:Button ID="btnAddNewMember" runat="server" ValidationGroup="3" Text="Submit" OnClick="btnAddNewMember_Click" class="btn-close-white" />
+                            <asp:Button ID="btnNewMemberClear" runat="server" Text="Clear" class="btn-close-white" CausesValidation="False" OnClick="btnNewMemberClear_Click" />
+                        </div>
+                        <asp:Label ID="lblNewMemberMessage" runat="server" Text=""></asp:Label>
+                    </div>
                 </div>
             </div>
-            <hr />
-            <div class="row">
-                <div class="col-sm-12">
-                    <footer id="footer">
-                        <p>
-                            Copyright  &copy;
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-sm-12">
+                <footer id="footer">
+                    <p>
+                        Copyright  &copy;
                             <script>document.write(new Date().getFullYear())</script>
-                            || Powershift Racing
-                        </p>
-                    </footer>
-                </div>
+                        || Powershift Racing
+                    </p>
+                </footer>
             </div>
         </div>
     </form>
