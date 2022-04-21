@@ -66,41 +66,100 @@
             </div>
             <hr />
             <div class="row">
-                <div class="col-sm-4">
-                    <asp:Label ID="lblRegisterMessage" runat="server" Text=""></asp:Label>
-                </div>
-                <div class="col-sm-4 register">
+                <div class="col-sm-12 jumbotron register">
                     <h3>Driver Registration</h3>
-                    <p>Your Member ID will be provided to you once your application has been accepted</p>
-                    <asp:TextBox ID="RegisterName" runat="server" placeholder="Name" class="mt-5"></asp:TextBox>
-                    <asp:TextBox ID="RegisterEmail" runat="server" placeholder="Email" class="mt-2"></asp:TextBox>
-                    <asp:TextBox ID="RegisterCode" runat="server" placeholder="Member ID" class="mt-2"></asp:TextBox>
-                    <asp:TextBox ID="RegisterPassword1" runat="server" placeholder="Password" class="mt-2"></asp:TextBox>
-                    <asp:TextBox ID="RegisterPassword2" runat="server" placeholder="Re-Enter Password" class="mt-2"></asp:TextBox>
-                    <br />
-                    <asp:Label ID="lblRegSelectRegion" runat="server" Text="Select Your Region:"></asp:Label>
-                    <asp:RadioButtonList ID="rblRegisterRegion" runat="server" DataSourceID="sdsPSR" DataTextField="RegionName" DataValueField="RegionID"></asp:RadioButtonList>
-                    <asp:SqlDataSource ID="sdsPSR" runat="server" ConnectionString="<%$ ConnectionStrings:S22_ksarmossConnectionString %>" SelectCommand="spGetRegion" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
-                    <br />
-                    <asp:Label ID="lblRegSelectCar" runat="server" Text="Select Your Primary Car Type:"></asp:Label>
-                    <asp:RadioButtonList ID="rblRegisterPrimaryCar" runat="server" DataSourceID="sdsGetCar" DataTextField="CarName" DataValueField="CarID"></asp:RadioButtonList>
-                    <asp:SqlDataSource ID="sdsGetCar" runat="server" ConnectionString="<%$ ConnectionStrings:S22_ksarmossConnectionString %>" SelectCommand="spGetCar" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
-                    <br />
-                    <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" class="btn-close-white"/>
-                    <asp:Button ID="btnRegClear" runat="server" Text="Clear" class="btn-close-white mt-2"/>
-                    <asp:Label ID="lblRegMessage" runat="server" Text=""></asp:Label>
                 </div>
-                <div class="col-sm-4">
-                    <asp:RequiredFieldValidator ID="rfvRegisterName" runat="server" ErrorMessage="* required" ControlToValidate="RegisterName" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
-                    <asp:RequiredFieldValidator ID="rfvRegisterEmail" runat="server" ErrorMessage="* required" ControlToValidate="RegisterEmail" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="regxRegisterEmail" runat="server" ErrorMessage="* please enter valid email" ControlToValidate="RegisterEmail" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
-                    <asp:RequiredFieldValidator ID="rfvRegisterCode" runat="server" ErrorMessage="* required" ControlToValidate="RegisterCode" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
-                    <%--Code validator of some sort here?--%>
-                    <asp:RequiredFieldValidator ID="rfvRegisterPassword1" runat="server" ErrorMessage="* required" ControlToValidate="RegisterPassword1" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="regxRegisterPassword" runat="server" ErrorMessage="Requirements: minimum of 8 characters, at least 1 upper and 1 lower case letter, at least 1 special character, at least 1 number" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ControlToValidate="RegisterPassword1" ValidationExpression="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$"></asp:RegularExpressionValidator>
-                    <asp:CompareValidator ID="cvRegisterPassword2" runat="server" ErrorMessage="* passwords must match" ControlToValidate="RegisterPassword2" ControlToCompare="RegisterPassword1" ValueToCompare="RegisterPassword2" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:CompareValidator>
-                    <asp:RequiredFieldValidator ID="rfvRegisterRegion" runat="server" ErrorMessage="* required" ControlToValidate="rblRegisterRegion" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
-                    <asp:RequiredFieldValidator ID="rfvRegisterCar" runat="server" ErrorMessage="* required" ControlToValidate="rblRegisterPrimaryCar" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                <div class="row">
+                    <div class="col-sm-4">
+
+                    </div>
+                    <div class="col-sm-4 application">
+                        <asp:TextBox ID="RegisterName" runat="server" placeholder="Name" class="mt-5"></asp:TextBox>
+                    </div>
+                    <div class="col-sm-4 AppValid">
+                        <asp:RequiredFieldValidator ID="rfvRegisterName" runat="server" ErrorMessage="* required" ControlToValidate="RegisterName" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+
+                    </div>
+                    <div class="col-sm-4 application">
+                        <asp:TextBox ID="RegisterEmail" runat="server" placeholder="Email" class="mt-2"></asp:TextBox>
+                    </div>
+                    <div class="col-sm-4 AppValid">
+                        <asp:RequiredFieldValidator ID="rfvRegisterEmail" runat="server" ErrorMessage="* required" ControlToValidate="RegisterEmail" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="regxRegisterEmail" runat="server" ErrorMessage="* please enter valid email" ControlToValidate="RegisterEmail" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+
+                    </div>
+                    <div class="col-sm-4 application">
+                        <asp:TextBox ID="RegisterPassword1" runat="server" placeholder="Password" class="mt-2"></asp:TextBox>
+                    </div>
+                    <div class="col-sm-4 AppValid">
+                        <asp:RequiredFieldValidator ID="rfvRegisterPassword1" runat="server" ErrorMessage="* required" ControlToValidate="RegisterPassword1" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="regxRegisterPassword" runat="server" ErrorMessage="Requirements: minimum of 8 characters, at least 1 upper and 1 lower case letter, at least 1 special character, at least 1 number" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ControlToValidate="RegisterPassword1" ValidationExpression="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$"></asp:RegularExpressionValidator>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+
+                    </div>
+                    <div class="col-sm-4 application">
+                        <asp:TextBox ID="RegisterPassword2" runat="server" placeholder="Re-Enter Password" class="mt-2"></asp:TextBox>
+                    </div>
+                    <div class="col-sm-4 AppValid">
+                        <asp:CompareValidator ID="cvRegisterPassword2" runat="server" ErrorMessage="* passwords must match" ControlToValidate="RegisterPassword2" ControlToCompare="RegisterPassword1" ValueToCompare="RegisterPassword2" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:CompareValidator>
+                    </div>
+                </div>
+                <br />
+                <div class="row mt-3">
+                    <div class="col-sm-4">
+
+                    </div>
+                    <div class="col-sm-4 application">
+                        <asp:Label ID="lblRegSelectRegion" runat="server" Text="Select Your Region:"></asp:Label>
+                        <asp:RadioButtonList ID="rblRegisterRegion" runat="server" DataSourceID="sdsPSR" DataTextField="RegionName" DataValueField="RegionID" CellPadding="2" CellSpacing="2" RepeatColumns="2"></asp:RadioButtonList>
+                        <asp:SqlDataSource ID="sdsPSR" runat="server" ConnectionString="<%$ ConnectionStrings:S22_ksarmossConnectionString %>" SelectCommand="spGetRegion" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+                    </div>
+                    <div class="col-sm-4 AppValid">
+                        <asp:RequiredFieldValidator ID="rfvRegisterRegion" runat="server" ErrorMessage="* required" ControlToValidate="rblRegisterRegion" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                    </div>
+                </div>
+                <br />
+                <div class="row mt-3">
+                    <div class="col-sm-4">
+
+                    </div>
+                    <div class="col-sm-4 application">
+                        <asp:Label ID="lblRegSelectCar" runat="server" Text="Select Your Primary Car Type:"></asp:Label>
+                        <asp:RadioButtonList ID="rblRegisterPrimaryCar" runat="server" DataSourceID="sdsGetCar" DataTextField="CarName" DataValueField="CarID" CellPadding="2" CellSpacing="2" RepeatColumns="2"></asp:RadioButtonList>
+                        <asp:SqlDataSource ID="sdsGetCar" runat="server" ConnectionString="<%$ ConnectionStrings:S22_ksarmossConnectionString %>" SelectCommand="spGetCar" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+                    </div>
+                    <div class="col-sm-4 AppValid">
+                        <asp:RequiredFieldValidator ID="rfvRegisterCar" runat="server" ErrorMessage="* required" ControlToValidate="rblRegisterPrimaryCar" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+
+                    </div>
+                    <div class="col-sm-4 app-buttons">
+                        <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" class="btn-close-white"/>
+                        <asp:Button ID="btnRegClear" runat="server" Text="Clear" class="btn-close-white mt-2" CausesValidation="False" OnClick="btnRegClear_Click"/>
+                        <asp:Label ID="lblRegMessage" runat="server" Text=""></asp:Label>
+                    </div>
+                    <div class="col-sm-4">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 AppMessageBox">
+                        <asp:Label ID="lblRegisterMessage" runat="server" Text=""></asp:Label>
+                    </div>
                 </div>
             </div>
             <hr />

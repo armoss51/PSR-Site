@@ -136,7 +136,7 @@
                     </div>
                     <div class="col-sm-4 application">
                         <asp:Label ID="Label2" runat="server" Text="Select Your Primary Car Type:"></asp:Label>
-                        <asp:RadioButtonList ID="rblApplyPrimaryCar" runat="server" DataSourceID="sdsApplyCar" DataTextField="CarName" DataValueField="CarID" RepeatColumns="2"></asp:RadioButtonList>
+                        <asp:RadioButtonList ID="rblApplyPrimaryCar" runat="server" DataSourceID="sdsApplyCar" DataTextField="CarName" DataValueField="CarID" RepeatColumns="2" CellPadding="2" CellSpacing="2"></asp:RadioButtonList>
                         <asp:SqlDataSource ID="sdsApplyCar" runat="server" ConnectionString="<%$ ConnectionStrings:S22_ksarmossConnectionString %>" SelectCommand="spGetCar" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                     </div>
                     <div class="col-sm-4 AppValid">

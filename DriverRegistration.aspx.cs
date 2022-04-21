@@ -60,5 +60,15 @@ namespace PSR_Site
                 }
             }
         }
+
+        protected void btnRegClear_Click(object sender, EventArgs e)
+        {
+            RegisterName.Text = "";
+            RegisterEmail.Text = "";
+            RegisterPassword1.Text = "";
+            rblRegisterRegion.SelectedIndex = -1;
+            rblRegisterPrimaryCar.SelectedIndex = -1;
+            lblRegMessage.Text = "";
+        }
     }
 }

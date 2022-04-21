@@ -24,15 +24,6 @@ namespace PSR_Site
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lblRegisterMessage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRegisterMessage;
-
-        /// <summary>
         /// RegisterName control.
         /// </summary>
         /// <remarks>
@@ -40,6 +31,15 @@ namespace PSR_Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox RegisterName;
+
+        /// <summary>
+        /// rfvRegisterName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRegisterName;
 
         /// <summary>
         /// RegisterEmail control.
@@ -51,13 +51,22 @@ namespace PSR_Site
         protected global::System.Web.UI.WebControls.TextBox RegisterEmail;
 
         /// <summary>
-        /// RegisterCode control.
+        /// rfvRegisterEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox RegisterCode;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRegisterEmail;
+
+        /// <summary>
+        /// regxRegisterEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regxRegisterEmail;
 
         /// <summary>
         /// RegisterPassword1 control.
@@ -69,6 +78,24 @@ namespace PSR_Site
         protected global::System.Web.UI.WebControls.TextBox RegisterPassword1;
 
         /// <summary>
+        /// rfvRegisterPassword1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRegisterPassword1;
+
+        /// <summary>
+        /// regxRegisterPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regxRegisterPassword;
+
+        /// <summary>
         /// RegisterPassword2 control.
         /// </summary>
         /// <remarks>
@@ -76,6 +103,15 @@ namespace PSR_Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox RegisterPassword2;
+
+        /// <summary>
+        /// cvRegisterPassword2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cvRegisterPassword2;
 
         /// <summary>
         /// lblRegSelectRegion control.
@@ -105,6 +141,15 @@ namespace PSR_Site
         protected global::System.Web.UI.WebControls.SqlDataSource sdsPSR;
 
         /// <summary>
+        /// rfvRegisterRegion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRegisterRegion;
+
+        /// <summary>
         /// lblRegSelectCar control.
         /// </summary>
         /// <remarks>
@@ -130,6 +175,15 @@ namespace PSR_Site
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource sdsGetCar;
+
+        /// <summary>
+        /// rfvRegisterCar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRegisterCar;
 
         /// <summary>
         /// btnRegister control.
@@ -159,84 +213,12 @@ namespace PSR_Site
         protected global::System.Web.UI.WebControls.Label lblRegMessage;
 
         /// <summary>
-        /// rfvRegisterName control.
+        /// lblRegisterMessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRegisterName;
-
-        /// <summary>
-        /// rfvRegisterEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRegisterEmail;
-
-        /// <summary>
-        /// regxRegisterEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator regxRegisterEmail;
-
-        /// <summary>
-        /// rfvRegisterCode control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRegisterCode;
-
-        /// <summary>
-        /// rfvRegisterPassword1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRegisterPassword1;
-
-        /// <summary>
-        /// regxRegisterPassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator regxRegisterPassword;
-
-        /// <summary>
-        /// cvRegisterPassword2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator cvRegisterPassword2;
-
-        /// <summary>
-        /// rfvRegisterRegion control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRegisterRegion;
-
-        /// <summary>
-        /// rfvRegisterCar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRegisterCar;
+        protected global::System.Web.UI.WebControls.Label lblRegisterMessage;
     }
 }
