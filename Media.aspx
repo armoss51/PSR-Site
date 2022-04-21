@@ -70,15 +70,31 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/vPx-N9_Ku0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" id="irVideo"></iframe>
                 </div>
             </div>
-            <div class="row mediaRow1">
-                <img src="Images/AboutUsCarousel/car1.PNG" alt="Car at finish line" class="img-fluid w-50 img-thumbnail d-block mx-auto"/>
-                <img src="Images/AboutUsCarousel/car2.PNG" alt="Car at finish line" class="img-fluid w-50 img-thumbnail d-block mx-auto"/>
-                <img src="Images/AboutUsCarousel/car3.PNG" alt="Cars at finish line" class="img-fluid w-50 img-thumbnail d-block mx-auto"/>
-            </div>
-            <div class="row mediaRow2">
-                <img src="Images/AboutUsCarousel/Car4.jpg" alt="pit stop" class="img-fluid w-50 img-thumbnail d-block mx-auto"/>
-                <img src="Images/AboutUsCarousel/car5.jpg" alt="car on track" class="img-fluid w-50 img-thumbnail d-block mx-auto"/>
-                <img src="Images/News/news1.jpg" alt="race track" class="img-fluid w-50 img-thumbnail d-block mx-auto"/>
+            <div class="row ImgCols">
+                <div class="col-sm-4 mediaRow1">
+                    <div class="media-image">
+                        <img src="Images/AboutUsCarousel/car1.PNG" alt="Car crossing finish line" class="img-fluid"/>
+                    </div>
+                    <div class="media-image">
+                        <img src="Images/AboutUsCarousel/car5.jpg" alt="Cars on track" class="img-fluid"/>
+                    </div>                    
+                </div>
+                <div class="col-sm-4 mediaRow2">
+                    <div class="media-image">
+                        <img src="Images/News/news1.jpg" alt="Race track" class="img-fluid"/>
+                    </div>
+                    <div class="media-image">
+                        <img src="Images/AboutUsCarousel/car2.PNG" alt="Cars on track" class="img-fluid"/>
+                    </div> 
+                </div>
+                <div class="col-sm-4 mediaRow3">
+                    <div class="media-image">
+                        <img src="Images/AboutUsCarousel/Car4.jpg" alt="NASCAR pit stop" class="img-fluid"/>
+                    </div>
+                    <div class="media-image">
+                        <img src="Images/AboutUsCarousel/car3.PNG" alt="Trucks crossing finish line" class="img-fluid"/>
+                    </div> 
+                </div>
             </div>
             <hr />
             <div class="row">

@@ -70,16 +70,16 @@
                     <asp:Label ID="lblAddRegion" runat="server" Text="Add Region:"></asp:Label>
                     <asp:TextBox ID="adminRegionName" runat="server" placeholder="Region Name"></asp:TextBox>
                     <br />
-                    <asp:Button ID="btnAddRegion" runat="server" Text="Submit" OnClick="btnAddRegion_Click" />
-                    <asp:Button ID="btnRegionClear" runat="server" Text="Clear" />
+                    <asp:Button ID="btnAddRegion" runat="server" Text="Submit" OnClick="btnAddRegion_Click" class="btn-close-white"/>
+                    <asp:Button ID="btnRegionClear" runat="server" Text="Clear" class="btn-close-white mt-2"/>
                     <asp:Label ID="lblRegionMessage" runat="server" Text=""></asp:Label>
                 </div>
                 <div class="col-sm-6 admin">
                     <asp:Label ID="lblAddCar" runat="server" Text="Add Car:"></asp:Label>
                     <asp:TextBox ID="addCar" runat="server" placeholder="Car Name"></asp:TextBox>
                     <br />
-                    <asp:Button ID="btnAddCar" runat="server" Text="Submit" OnClick="btnAddCar_Click" />
-                    <asp:Button ID="btnCarClear" runat="server" Text="Clear" />
+                    <asp:Button ID="btnAddCar" runat="server" Text="Submit" OnClick="btnAddCar_Click" class="btn-close-white"/>
+                    <asp:Button ID="btnCarClear" runat="server" Text="Clear" class="btn-close-white mt-2"/>
                     <asp:Label ID="lblCarMessage" runat="server" Text=""></asp:Label>
                 </div>
             </div>

@@ -244,8 +244,15 @@ nav ul {
 
 .videoEmbed {
     text-align: center;
+    margin-bottom:2em;
 }
 
-.mediaRow1 {
-    display: flex
+.ImgCols img {
+    margin:1em;
+}
+
+.media-image {
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
