@@ -216,9 +216,18 @@ nav ul {
     align-items:center;
 }
 
+.application {
+    padding:0;
+}
+
+.app-labels {
+    text-align:right;
+}
+
 .AppValid {
     display: flex;
     flex-direction: column;
+    padding:0;
 }
 
 .AppMessageBox {
@@ -232,6 +241,10 @@ nav ul {
 
 #rfvApplyPrimaryCar {
     margin-top:5em;
+}
+
+.app-buttons {
+    text-align:center;
 }
 
 .register p {

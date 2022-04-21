@@ -62,5 +62,15 @@ namespace PSR_Site
                 }
             }
         }
+
+        protected void btnClear_Click(object sender, EventArgs e)
+        {
+            ApplyName.Text = "";
+            ApplyEmail.Text = "";
+            ApplyIracingName.Text = "";
+            ApplyDiscordName.Text = "";
+            rblApplyRegion.SelectedIndex = -1;
+            rblApplyPrimaryCar.SelectedIndex = -1;
+        }
     }
 }
