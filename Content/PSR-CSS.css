@@ -1,4 +1,8 @@
-﻿body {
+﻿html {
+    background-color: #000;
+}
+
+body {
     background-color: #000;
     font-family: 'Exo 2', sans-serif;
     color: whitesmoke;
@@ -96,7 +100,7 @@ nav ul {
 }
 
 .home-1 {
-    background-image: url("Images/GetStarted.jpg");
+    background-image: url('../Images/GetStarted.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -122,7 +126,7 @@ nav ul {
 
 
 .team-login {
-    background-image: url('Images/teamlogin.jpg');
+    background-image: url('../Images/teamlogin.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -132,7 +136,7 @@ nav ul {
 }
 
 .upcoming {
-    background-image: url('Images/upcoming.jpg');
+    background-image: url('../Images/upcoming.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -272,5 +276,17 @@ nav ul {
 
 .admin-buttons {
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
+}
+
+#LoginMenuItem {
+    display: block;
+}
+
+#LogoutMenuItem {
+    display: none;
+}
+
+#AdminMenuItem {
+    display: none;
 }

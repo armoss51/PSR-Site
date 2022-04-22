@@ -78,7 +78,6 @@
                 <div class="row">
                     <%-- Add a region --%>
                     <div class="col-sm-4 application">
-
                         <asp:Label ID="lblAddRegion" runat="server" Text="Add Region:"></asp:Label>
                         <asp:TextBox ID="adminRegionName" runat="server" placeholder="Region Name" ValidationGroup="1" class="mt-2"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvAddRegion" runat="server" ErrorMessage="* required" ControlToValidate="adminRegionName" ForeColor="Red" SetFocusOnError="True" Font-Bold="True" Display="Dynamic" ValidationGroup="1"></asp:RequiredFieldValidator>
