@@ -62,8 +62,9 @@
                                 <li class="nav-item"><a href="MEDIA.aspx" class="nav-link">MEDIA</a></li>
                                 <li class="nav-item"><a href="Apply.aspx" class="nav-link">APPLY</a></li>
                                 <li class="nav-item"><a href="DriverRegistration.aspx" class="nav-link">DRIVER REGISTRATION</a></li>
-                                <li class="nav-item"><a href="Login.aspx" class="nav-link">LOGIN</a></li>
-                                <li class="nav-item"><a href="Admin.aspx" class="nav-link">ADMIN</a></li>
+                                <li class="nav-item"><a id="LoginMenuItem" runat="server" href="Login.aspx" class="nav-link">LOGIN</a></li>
+                                <li class="nav-item"><a id="LogoutMenuItem" runat="server" href="Login.aspx" class="nav-link">LOGOUT</a></li>
+                                <li class="nav-item"><a id="AdminMenuItem" runat="server" href="Admin.aspx" class="nav-link">ADMIN</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -116,7 +117,7 @@
 
                     </div>
                     <div class="col-sm-4 app-buttons">
-                        <asp:Button ID="btnApply" runat="server" Text="Login" OnClick="btnApply_Click" class="btn-close-white" />
+                        <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnApply_Click" class="btn-close-white" />
                         <asp:Button ID="btnLoginClear" runat="server" Text="Clear" class="btn-close-white" CausesValidation="False" OnClick="btnLoginClear_Click"/>
                     </div>
                     <div class="col-sm-4">

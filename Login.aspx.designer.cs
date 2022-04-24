@@ -24,6 +24,33 @@ namespace PSR_Site
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// LoginMenuItem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor LoginMenuItem;
+
+        /// <summary>
+        /// LogoutMenuItem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor LogoutMenuItem;
+
+        /// <summary>
+        /// AdminMenuItem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor AdminMenuItem;
+
+        /// <summary>
         /// LoginEmail control.
         /// </summary>
         /// <remarks>
@@ -78,13 +105,13 @@ namespace PSR_Site
         protected global::System.Web.UI.WebControls.CheckBox cbRememberMe;
 
         /// <summary>
-        /// btnApply control.
+        /// btnLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnApply;
+        protected global::System.Web.UI.WebControls.Button btnLogin;
 
         /// <summary>
         /// btnLoginClear control.

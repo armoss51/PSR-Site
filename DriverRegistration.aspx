@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>DRIVER REGISTRATION</title>
+    <title>Driver Registration</title>
     <script src="Scripts/jquery-3.6.0.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
@@ -62,8 +62,9 @@
                                 <li class="nav-item"><a href="MEDIA.aspx" class="nav-link">MEDIA</a></li>
                                 <li class="nav-item"><a href="Apply.aspx" class="nav-link">APPLY</a></li>
                                 <li class="nav-item"><a href="DriverRegistration.aspx" class="nav-link">DRIVER REGISTRATION</a></li>
-                                <li class="nav-item"><a href="Login.aspx" class="nav-link">LOGIN</a></li>
-                                <li class="nav-item"><a href="Admin.aspx" class="nav-link">ADMIN</a></li>
+                                <li class="nav-item"><a id="LoginMenuItem" runat="server" href="Login.aspx" class="nav-link">LOGIN</a></li>
+                                <li class="nav-item"><a id="LogoutMenuItem" runat="server" href="Login.aspx" class="nav-link">LOGOUT</a></li>
+                                <li class="nav-item"><a id="AdminMenuItem" runat="server" href="Admin.aspx" class="nav-link">ADMIN</a></li>
                             </ul>
                         </div>
                     </nav>

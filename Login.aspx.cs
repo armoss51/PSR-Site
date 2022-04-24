@@ -17,7 +17,7 @@ namespace PSR_Site
 
         }
 
-        protected void btnApply_Click(object sender, EventArgs e)
+        protected void btnLogin_Click(object sender, EventArgs e)
         {
             string strConn = ConfigurationManager.ConnectionStrings["S22_ksarmossConnectionString"].ConnectionString;
 
@@ -76,6 +76,11 @@ namespace PSR_Site
             LoginEmail.Text = "";
             LoginPassword.Text = "";
             cbRememberMe.Checked = false;
+        }
+
+        protected void btnApply_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
