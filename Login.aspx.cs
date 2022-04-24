@@ -52,15 +52,9 @@ namespace PSR_Site
                         currentUser.MemberCar = Convert.ToInt32(dsUserRecord.Tables[0].Rows[0]["MemberCar"].ToString());
                         currentUser.MemberSecID = Convert.ToInt32(dsUserRecord.Tables[0].Rows[0]["MemberSecID"].ToString());
 
-                        Session["UserRecord"] = currentUser;
+                        Session["UserRecord"] = currentUser;                        
 
-                        //Clear form
-                        LoginEmail.Text = "";
-                        LoginPassword.Text = "";
-
-                        Response.Redirect("~/Home.aspx");
-
-                    }
+                    }                    
                 }
                 catch (Exception exc)
                 {

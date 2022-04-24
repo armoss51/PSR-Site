@@ -279,14 +279,5 @@ nav ul {
     flex-direction:row;
 }
 
-#LoginMenuItem {
-    display: block;
-}
 
-#LogoutMenuItem {
-    display: none;
-}
-
-/*#AdminMenuItem {
-    display: none;
-}*/
+/*Hide/Show menus based on login*/
